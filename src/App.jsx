@@ -8,6 +8,9 @@ import Home from "./views/Home";
 import Technology from "./views/Technology";
 import WhoWeAre from "./views/Who We Are";
 import Product from "./views/Product";
+import ClinicalDiagnostics from "./views/Clinical Diagnostics";
+import FoodSafety from "./views/Food Safety";
+import BioDefense from "./views/BioDefense";
 
 function App() {
   const location = useLocation();
@@ -20,9 +23,12 @@ function App() {
             <Route path="/technology" element={<Technology />} />
             <Route path="/whoweare" element={<WhoWeAre />} />
             <Route path="/product" element={<Product />} />
-            {/* <Route path="rooms" element={<Room />} />
-            <Route path="menu" element={<Menu />} />
-            <Route path="packages" element={<Packages />} /> */}
+            <Route
+              path="clinicalDiagnostics"
+              element={<ClinicalDiagnostics />}
+            />
+            <Route path="foodSafety" element={<FoodSafety />} />
+            <Route path="bioDefense" element={<BioDefense />} />
           </Route>
         </Routes>
       </AnimatePresence>

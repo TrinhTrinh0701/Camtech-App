@@ -13,15 +13,13 @@ import LK from "../../asset/img/linkedin.png";
 import YT from "../../asset/img/youtube.png";
 import Logo from "../../asset/img/Logo/Logo.png";
 import "./styles.css";
+import menuManage from "../../utils/Common/menuManage";
 const styles = {
   link: "cursor-pointer",
+  color: "text-black",
 };
 
-const ourPricesRoutes = [
-  "/clinical diagnostics",
-  "/food safety",
-  "/biodefense",
-];
+const ourPricesRoutes = ["/clinicalDiagnostics", "/foodSafety", "/biodefense"];
 
 function Header() {
   const [subMenuVisiable, setSubMenuVisiable] = useState(false);
@@ -53,7 +51,7 @@ function Header() {
               : "fixed top-0 left-0 right-0 w-full max-w-[1536px] text-white"
           }
         >
-          <div className="flex gap-[380px] lg:px-[124px] h-full py-[24px]">
+          <div className="  flex gap-[360px] lg:px-[124px] h-full py-[24px]">
             <div className="md:px-6">
               <img
                 src={Logo}
@@ -63,13 +61,13 @@ function Header() {
                 onClick={navigateToHome}
               />
             </div>
-            <div className="flex gap-[32px] items-center">
-              <div className="lg:flex gap-[32px] justify-center items-center md:hidden">
+            <div className=" flex  gap-[32px] items-center">
+              <div className="relative text-teal-400 lg:flex gap-[32px] justify-center items-center md:hidden">
                 <div className="leading-[26px] text-base font-semibold">
                   <Link
                     to="/"
                     className={`${styles.link} ${
-                      pathname === "/" ? " font-extrabold " : ""
+                      pathname === "/" ? " font-extrabold" : ""
                     }`}
                   >
                     Home
@@ -96,8 +94,27 @@ function Header() {
                       Products
                     </Link>
                   </p>
-                  <CaretDownOutlined className="w-5 h-5"></CaretDownOutlined>
+                  <CaretDownOutlined
+                    onClick={() => setSubMenuVisiable((prev) => !prev)}
+                    className="w-5 h-5 cursor-pointer"
+                  ></CaretDownOutlined>
+                  {subMenuVisiable && (
+                    <div className="absolute right-0 flex flex-col p-4 z-[5] bg-white rounded-md shadow-md min-w-200 top-full">
+                      {menuManage.map((item) => {
+                        return (
+                          <Link
+                            className="flex items-center gap-2 py-2 text-blue-600 border-b hover:text-orangce border-gray600"
+                            key={item.id}
+                            to={item?.path}
+                          >
+                            {item.text}
+                          </Link>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
+
                 <div className="leading-[26px] text-base font-semibold">
                   <Link
                     to="/technology"
@@ -109,12 +126,12 @@ function Header() {
                   </Link>
                 </div>
               </div>
-              <div className="md:px-[24px]">
+              <div className="md:px-[24px] ">
                 <div
                   className={
                     color
                       ? "lg:text-white md:text-black flex  gap-1 md:bg-none lg:border-none md:border-black md:border py-[12px] px-[24px] lg:bg-[#107AB7] rounded-md"
-                      : "flex  gap-1 md:bg-none lg:border-none md:border-white md:border py-[12px] px-[24px] text-white rounded-md lg:bg-[#107AB7]"
+                      : "flex  gap-1 md:bg-none lg:hover:bg-blue-800 lg:text-teal-400  md:border-white md:border py-[12px] px-[24px] text-white rounded-md lg:border-1 lg:border-teal-200"
                   }
                 >
                   <button className="text-base font-bold">CONTACT US</button>

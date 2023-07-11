@@ -14,20 +14,23 @@ function Footer() {
   };
   return (
     <div className="mt-[56px] h-full w-full ">
-      <div className=" flex  gap-[126px] md:px-[24px] justify-center items-center bg-[#C6EAFE] lg:px-[340px] py-[56px]">
-        <div className=" font-light text-[40px] leading-[48px] h-full">
+      <div className="grid grid-cols-1 lg:flex lg:items-center lg:justify-center  md:flex md:px-[50px] md:gap-[100px] px-[170px] bg-[#C6EAFE] py-[56px]">
+        <div className=" font-light text-center pb-5 w-[340px] md:w-[500px] text-[40px] leading-[48px] h-full">
           Ready to connect with us?
         </div>
-        <div className="flex h-full gap-1 py-[12px] px-[24px] text-white rounded-md bg-[#107AB7]">
+        <div
+          className="hover:bg-blue-900 w-[343px] md:w-[165px] items-center justify-center border-white border-2 
+        flex h-full gap-1 py-[12px] text-white rounded-md bg-[#107AB7]"
+        >
           <button className="text-base font-bold">CONTACT US</button>
           <div className="flex items-center justify-center text-xl">
             <RightOutlined></RightOutlined>
           </div>
         </div>
       </div>
-      <div className=" flex flex-col h-full  md:px-6 lg:items-center w-full bg-[#123C54]">
-        <div className="lg:flex lg:gap-[124px] ">
-          <div className="flex flex-col mt-12 min-w-[368px] md:pb-12 ">
+      <div className="  h-full w-full  bg-[#123C54]">
+        <div className="px-4 lg:gap-[120px]  md:px-6 gap-[48px] lg:px-[124px] grid grid-cols-1 lg:flex ">
+          <div className="flex flex-col mt-12 min-w-[368px] ">
             <img
               src={Logo}
               className=" h-[64px] w-[200px] cursor-pointer object-contain"
@@ -39,7 +42,7 @@ function Footer() {
               Point of need. Always. Everywhere.
             </p>
           </div>
-          <div className="flex gap-[34px] w-full lg:mt-[80px] lg:mb-[52px] cursor-pointer">
+          <div className="grid grid-cols-2 lg:pt-[82px] lg:gap-[80px] md:flex gap-[34px] w-full cursor-pointer">
             <div className="text-white flex w-[162px] flex-col gap-[10px]">
               <div className="font-bold text-[#09D3C2] text-xs leading-[20px]">
                 ABOUT US
@@ -129,7 +132,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-[#123C54] md:px-6 flex lg:px-[240px] md:pt-12 w-full">
+      <div className="bg-[#123C54] lg:px-[124px] md:px-6 px-4 w-full pt-[48px]">
         <p className="pb-[16px] items-start text-white">
           Copyright © 2013–2021 Camtech Diagnostics. All rights reserved.{" "}
         </p>
