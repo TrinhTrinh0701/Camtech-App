@@ -1,30 +1,166 @@
+import { RightOutlined } from "@ant-design/icons";
+import { Button, Carousel, Typography } from "@material-tailwind/react";
 import React from "react";
-import Slider from "../../asset/img/slider.png";
-import Why from "../../asset/img/w.png";
-import LastNew1 from "../../asset/img/lastnew1.png";
-import LastNew2 from "../../asset/img/lastnew2.png";
+import { Link } from "react-router-dom";
+import B1 from "../../asset/img/Biodefense/1.png";
 import CD1 from "../../asset/img/Clinical Diagnostics/1.png";
 import FS1 from "../../asset/img/Food Safety/1.png";
-import B1 from "../../asset/img/Biodefense/1.png";
+import T1 from "../../asset/img/Technology/1.PNG";
 import Gar from "../../asset/img/Trusted By/gar.png";
-import Nestle from "../../asset/img/Trusted By/nestle.png";
-import Winlmar from "../../asset/img/Trusted By/winlmar.png";
-import SimeDarby from "../../asset/img/Trusted By/sime darby.png";
 import MusimMas from "../../asset/img/Trusted By/musim mas.png";
+import Nestle from "../../asset/img/Trusted By/nestle.png";
+import SimeDarby from "../../asset/img/Trusted By/sime darby.png";
+import Winlmar from "../../asset/img/Trusted By/winlmar.png";
+import C1 from "../../asset/img/carousel.png";
+import C2 from "../../asset/img/carousel2.png";
+import C3 from "../../asset/img/carousel3.png";
+import LastNew1 from "../../asset/img/lastnew1.png";
+import LastNew2 from "../../asset/img/lastnew2.png";
+import Why from "../../asset/img/w.png";
 
-import { RightOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import "./styles.css";
 
 function Home() {
   return (
     <div className="flex flex-col gap-14">
-      <div className="">
-        <img
-          src={Slider}
-          className="w-full max-h-[720px] object-cover"
-          alt=""
-          srcSet=""
-        />
+      <div className="relative">
+        <Carousel className="">
+          <div className="relative w-full h-[720px]">
+            <img
+              src={C1}
+              alt="image 2"
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute inset-0 grid items-center w-full h-full ">
+              <div className=" pl-[5px] t-[150px] md:px-[5%]">
+                <Typography
+                  variant="lead"
+                  color="white"
+                  className="leading-[64px] text-[40px] font-normal  text-center p-5 "
+                >
+                  Our detection platforms cover a wide range of industries with
+                  <Link to="/product">
+                    <span className="text-[#09D3C2] px-1">
+                      dedicated products using technologies
+                    </span>
+                  </Link>
+                  that match our customers' needs.
+                </Typography>
+              </div>
+            </div>
+          </div>
+          <div className="relative w-full h-[720px]">
+            <img
+              src={C2}
+              alt="image 2"
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute inset-0 grid items-center w-full h-full lg:flex lg:justify-between lg:px-[5%] ">
+              <div className="flex items-center justify-center ">
+                <img
+                  src={T1}
+                  alt="image 3"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[5%] lg:h-[53%] md:left-[20%] left-[100px] shadow-2xl  h-[31%] a absolute rounded-2xl"
+                />
+                <img
+                  src={CD1}
+                  alt="image 2"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[7%] md:left-[23%] lg:h-[50%] left-[120px] shadow-2xl h-[30%] absolute b rounded-2xl"
+                />
+              </div>
+              <div className="px-[5%] lg:px-0 lg:w-[700px]">
+                <Typography
+                  variant="h1"
+                  color="white"
+                  className="text-3xl pt-[200px] text-center md:text-2xl lg:text-5xl"
+                >
+                  Camtech offers the most advanced Covid-19 point of care rapid
+                  testing solutions
+                </Typography>
+                <Typography
+                  variant="lead"
+                  color="white"
+                  className="leading-[48px] text-xl font-normal  text-center p-5"
+                >
+                  <Link to="/product">
+                    <span className="text-[#09D3C2]">
+                      With a selected range of approved COVID-19 test kits we
+                      are helping our customers to identify active and past
+                      COVID cases and increasing screening capacity.
+                    </span>
+                  </Link>
+                </Typography>
+                <div className="hidden gap-2 lg:pb-[180px] md:block md:px-[33%]">
+                  <Link to="/product">
+                    <Button
+                      size="lg"
+                      color="white"
+                      className="w-full text-white bg-transparent border border-white cursor-pointer hover:bg-light-blue-800"
+                    >
+                      VIEW Covid-19 TEST KITS
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="relative w-full h-[720px]">
+            <img
+              src={C3}
+              alt="image 3"
+              className="object-cover w-full h-full"
+            />
+            <div className="absolute inset-0 grid items-center w-full h-full lg:flex lg:justify-between lg:px-[5%] ">
+              <div className="flex items-center justify-center ">
+                <img
+                  src={T1}
+                  alt="image 3"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[5%] lg:h-[53%] md:left-[20%] left-[100px] shadow-2xl  h-[31%] a absolute rounded-2xl"
+                />
+                <img
+                  src={B1}
+                  alt="image 2"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[7%] md:left-[23%] lg:h-[50%] left-[120px] shadow-2xl h-[30%] absolute b rounded-2xl"
+                />
+              </div>
+              <div className="px-[5%] lg:px-0 lg:w-[700px]">
+                <Typography
+                  variant="h1"
+                  color="white"
+                  className="text-3xl pt-[200px] text-center md:text-2xl lg:text-5xl"
+                >
+                  World’s first quick test for 3-MCPD & GE in edible oils
+                </Typography>
+                <Typography
+                  variant="lead"
+                  color="white"
+                  className="leading-[48px] text-xl font-normal  text-center p-5"
+                >
+                  <Link to="/product">
+                    <span className="text-[#09D3C2]">
+                      Our specifically developed rapid test kit for 3-MCPD
+                      (3-monochloropropane-1,2-diol or 3-chloropropane-1,2-diol)
+                      and glycidyl esters can detect these carcinogenic
+                      compounds found in edible oils and fats with high
+                      sensitivity.
+                    </span>
+                  </Link>
+                </Typography>
+                <div className="hidden gap-2 lg:pb-[180px] md:block md:px-[33%]">
+                  <Link to="/product">
+                    <Button
+                      size="lg"
+                      color="white"
+                      className="w-full text-white bg-transparent border border-white cursor-pointer hover:bg-light-blue-800"
+                    >
+                      VIEW Covid-19 TEST KITS
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Carousel>
       </div>
       <div className="flex flex-col gap-[24px] px-4 w-[343px] mx-[25%] md:mx-0 md:w-full md:justify-center md:items-center lg:px-[124px]  lg:items-start ">
         <p className="text-[#107AB7] font-normal md:pr-[200px] leading-[42px] text-[28px]">
@@ -135,7 +271,7 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className=" grid grid-cols-1 gap-8 mx-[25%] md:mx-[150px] lg:mx-0 lg:flex lg:py-14 lg:gap-[15  0px] lg:justify-center lg:items-center">
+      <div className=" grid grid-cols-1 gap-8 mx-[25%] md:mx-[150px] lg:mx-0 lg:flex lg:py-14 lg:gap-[150px] lg:justify-center lg:items-center">
         <p className="text-[#107AB7] leading-[42px] font-normal text-[28px] ">
           Trusted By
         </p>

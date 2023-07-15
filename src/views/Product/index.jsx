@@ -5,30 +5,37 @@ import CD from "../../asset/img/Clinical Diagnostics/1.png";
 import FS from "../../asset/img/Food Safety/1.png";
 import BF from "../../asset/img/Biodefense/1.png";
 import { Link } from "react-router-dom";
+import { RightOutlined } from "@ant-design/icons";
 
 function Product() {
   return (
     <div>
-      <img
-        src={Whyweare}
-        className="w-full max-h-[720px] object-cover"
-        alt=""
-        srcSet=""
-      />
       <div className="">
-        <div className="">
-          <img
-            src={Slider}
-            className="w-full max-h-[ 416px] object-cover"
-            alt=""
-            srcSet=""
-          />
+        <img
+          src={Whyweare}
+          className="w-full h-[256px] object-cover top-0 left-0 right-0"
+          alt=""
+          srcSet=""
+        />
+        <div className="flex absolute z-3 top-[130px] px-[20%] lg:px-[9%]  md:px-[10%] w-full gap-[56px]">
+          <div className="flex justify-center gap-2 ">
+            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
+            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+            <p className="text-[#107AB7] leading-[16px] text-xs underline">
+              Product
+            </p>
+          </div>
+          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
+            Product
+          </p>
         </div>
+      </div>
+      <div className="">
         <div className="grid grid-cols-1 py-14 mx-[25%] md:mx-0">
           <div className="grid grid-cols-1 gap-6 md:flex md:gap-6 md:justify-center md:items-center lg:gap-[124px]">
             <img
               src={CD}
-              className="w-[343px] h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"
+              className="w-full h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"
               alt=""
               srcSet=""
             />
@@ -53,7 +60,7 @@ function Product() {
           </div>
         </div>
         <div className="grid grid-cols-1 py-14 mx-[25%] md:mx-0">
-          <div className="grid grid-cols-1 bg-[#F7F7F9] gap-6 md:flex md:gap-6 md:justify-center md:items-center lg:gap-[124px]">
+          <div className="grid grid-cols-1 bg-[#F7F7F9] gap-6 md:flex md:gap-6 md:justify-center md:items-center lg:flex-row-reverse lg:gap-[124px]">
             <img
               src={FS}
               className="w-[343px] h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"

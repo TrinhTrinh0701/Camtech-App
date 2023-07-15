@@ -4,24 +4,80 @@ import Slider from "../../asset/img/slider.png";
 import CD1 from "../../asset/img/Clinical Diagnostics/2.PNG";
 import { RightOutlined } from "@ant-design/icons";
 import T1 from "../../asset/img/Technology/1.PNG";
+import C3 from "../../asset/img/carousel3.png";
+import { Button, Typography } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 function ClinicalDiagnostics(props) {
   return (
-    <div>
-      <img
-        src={Whyweare}
-        className="w-full max-h-[720px] object-cover"
-        alt=""
-        srcSet=""
-      />
+    <div className="">
       <div className="">
-        <div className="">
+        <img
+          src={Whyweare}
+          className="w-full h-[256px] object-cover top-0 left-0 right-0"
+          alt=""
+          srcSet=""
+        />
+        <div className="flex absolute z-3 top-[130px] w-full px-[20%] lg:px-[9%]  md:px-[10%] gap-[56px]">
+          <div className="flex justify-center gap-2 ">
+            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
+            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+            <p className="text-[#107AB7] leading-[16px] text-xs underline">
+              Clinical Diagnostics
+            </p>
+          </div>
+          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
+            CILINICAL DIAGNOSTICS
+          </p>
+        </div>
+      </div>
+      <div className="">
+        <div className="relative ">
           <img
-            src={Slider}
-            className="w-full max-h-[ 416px] object-cover"
+            src={C3}
+            className="w-full h-[600px] object-cover"
             alt=""
             srcSet=""
           />
+          <div className="absolute inset-0 grid items-center justify-center w-full h-full py-14 ">
+            <div className=" pl-[5px] t-[150px]">
+              <Typography variant="lead" color="white" className="">
+                <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
+                  <p className="leading-[42px] text-[28px] font-normal">
+                    Enabling point of care testing for Clinical Diagnostics
+                  </p>
+                  <Link to="/product">
+                    <span className="text-[#09D3C2] leading-[32px] text-xl font-bold">
+                      Our specifically developed rapid test kit for 3-MCPD
+                      (3-monochloropropane-1,2-diol or 3-chloropropane-1,2-diol)
+                      and glycidyl esters can detect these carcinogenic
+                      compounds found in edible oils and fats with high
+                      sensitivity.
+                    </span>
+                  </Link>
+                  <p className="leading-[26px] text-base font-normal">
+                    Due to their simplicity and minimal sample preparation time,
+                    these kits can be used in clinical settings or at home. Our
+                    aim is to make POC kits widely available so patients’
+                    conditions can quickly be assessed for quick intervention.
+                    Camtech is offering a range of laboratory and rapid tests to
+                    increase COVID-19 testing around the world..
+                  </p>
+                </div>
+              </Typography>
+              <div className="pt-5 lg:px-[5%]">
+                <Link to="/product">
+                  <Button
+                    size="lg"
+                    color="white"
+                    className="w-full md:w-[250px] text-white bg-transparent border border-white cursor-pointer hover:bg-light-blue-800"
+                  >
+                    VIEW Covid-19 TEST KITS
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
         <div className="grid grid-cols-1 gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center lg:flex lg:gap-[124px] ">
           <img
@@ -68,11 +124,11 @@ function ClinicalDiagnostics(props) {
             </div>
           </div>
         </div>
-        <p className="text-[#107AB7] leading-[42px] text-[28px] pb-6 mx-[25%] w-full md:mx-6 lg:mx-[124px] ">
+        <p className="text-[#107AB7] leading-[42px] text-[28px] pb-6 mx-[25%] md:mx-6 lg:mx-[124px] ">
           Other COVID-19 Products
         </p>
-        <div className="grid grid-cols-1 gap-6 w-[373px] mx-[25%] pb-14 md:mx-6 md:grid md:grid-cols-2 md:gap-6 md:w-full lg:flex lg:gap-6 lg:items-center lg:justify-center ">
-          <div className="flex flex-col gap-6 md:w-[378px] lg:w-[320px]">
+        <div className="grid grid-cols-1 gap-6 w-[373px] mx-[25%] pb-14 md:mx-6 lg:px-[50px] md:grid md:grid-cols-2 md:gap-6 md:w-[800px] lg:flex lg:gap-6 lg:items-center lg:justify-center ">
+          <div className="flex flex-col gap-6 md:w-[300px]  lg:w-[320px]">
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"
@@ -88,7 +144,7 @@ function ClinicalDiagnostics(props) {
               virus variant (B.1.1.7).
             </p>
           </div>
-          <div className="flex flex-col gap-6 md:w-[378px] lg:w-[320px]">
+          <div className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]">
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"
@@ -104,7 +160,7 @@ function ClinicalDiagnostics(props) {
               handrails. Speedy evaluation of the cleanliness of surfaces.
             </p>
           </div>
-          <div className="flex flex-col gap-6 md:w-[378px] lg:w-[320px]">
+          <div className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]">
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"
@@ -120,7 +176,7 @@ function ClinicalDiagnostics(props) {
               asymptomatic cases.
             </p>
           </div>
-          <div className="flex flex-col gap-6 md:w-[378px] lg:w-[320px]">
+          <div className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]">
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"

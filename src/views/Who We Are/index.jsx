@@ -18,51 +18,63 @@ import Nestle from "../../asset/img/Trusted By/nestle.png";
 import Winlmar from "../../asset/img/Trusted By/winlmar.png";
 import SimeDarby from "../../asset/img/Trusted By/sime darby.png";
 import MusimMas from "../../asset/img/Trusted By/musim mas.png";
+import { RightOutlined } from "@ant-design/icons";
+import C1 from "../../asset/img/carousel.png";
+import { Typography } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
+
 function WhoWeAre(props) {
-  const [color, setColor] = useState(false);
-  const changeColor = () => {
-    if (window.scrollY >= 90) {
-      setColor(true);
-    } else {
-      setColor(false);
-    }
-  };
-  window.addEventListener("scroll", changeColor);
   return (
     <div className="">
-      <img
-        src={Whyweare}
-        className="w-full max-h-[720px] object-cover"
-        alt=""
-        srcSet=""
-      />
-      {/* <div className="">
+      <div className="">
         <img
           src={Whyweare}
-          className="w-full max-h-[720px] object-cover top-0 left-0 right-0"
+          className="w-full h-[256px] object-cover top-0 left-0 right-0"
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-3 top-[100px] w-full gap-[56px]">
-          <div className=""></div>
-          <p className="text-[40px] top-[150px] lg:px-[150px] leading-[48px] text-[#107AB7] font-extrabold">
-            Who We Are
+        <div className="flex absolute z-3 top-[130px] px-[20%] lg:px-[8%]  md:px-[10%] w-full gap-[56px]">
+          <div className="flex justify-center gap-2 ">
+            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
+            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+            <p className="text-[#107AB7] leading-[16px] text-xs underline">
+              Who We Are
+            </p>
+          </div>
+          <p className="text-[40px] absolute   pt-8 leading-[48px] text-[#107AB7] font-extrabold">
+            WHO WE ARE
           </p>
         </div>
-      </div> */}
-
+      </div>
       <div className="flex flex-col gap-14">
-        <div className="">
+        <div className="relative">
           <img
-            src={Slider}
-            className="w-full max-h-[ 416px] object-cover"
+            src={C1}
+            className="w-full h-[375px] object-cover"
             alt=""
             srcSet=""
           />
+          <div className="absolute inset-0 grid items-center justify-center w-full h-full ">
+            <div className=" pl-[5px] t-[150px] md:px-[5%]">
+              <Typography
+                variant="lead"
+                color="white"
+                className="leading-[64px] text-[40px] font-normal  p-5 "
+              >
+                We aim to
+                <Link to="/product">
+                  <span className="text-[#09D3C2] px-1">
+                    enable ideal human health and wellness
+                  </span>
+                </Link>
+                through technology and innovation in testing.
+              </Typography>
+            </div>
+          </div>
         </div>
-        <div className="grid lg:pb-2 grid-cols-1 gap-6 lg:gap-[170px] md:flex md:justify-center md:items-center md:gap-10 ">
+        <div className="grid lg:pb-2 grid-cols-1 gap-6 lg:gap-[130px] md:flex md:justify-center md:items-center md:gap-10 ">
           <div className="flex flex-col items-center justify-center gap-4 font-normal ">
-            <p className="pr-[200px]  text-[#107AB7] leading-[42px] text-[28px]">
+            <p className="pr-[200px] text-[#107AB7] leading-[42px] text-[28px]">
               Our Vision
             </p>
             <p className="text-[#484848] text-base leading-[26px]">
@@ -100,9 +112,9 @@ function WhoWeAre(props) {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-1 px-[150px] lg:flex lg:gap-[200px] lg:px-0 gap-4 font-normal">
-            <div className="">
-              <p className="pr-[230px] text-[#107AB7] leading-[42px] text-[28px]">
+          <div className="grid grid-cols-1 px-[150px] md:px-0 lg:flex lg:gap-[200px] lg:px-0 gap-4 font-normal">
+            <div className="flex flex-col gap-6">
+              <p className="pr-[150px] text-[#107AB7] leading-[42px] text-[28px]">
                 Our Story
               </p>
               <p className="text-[#484848] text-base leading-[26px]">
@@ -130,7 +142,7 @@ function WhoWeAre(props) {
           <p className="flex items-center justify-center md:pr-[550px] lg:pr-0 pr-[180px] font-normal text-[#107AB7] leading-[42px] text-[28px]">
             Our Partners
           </p>
-          <div className="grid grid-cols-1 gap-6 px-[170px] md:flex lg:px-0 lg:gap-16 ">
+          <div className="grid grid-cols-1 gap-6 px-[170px] md:px-[80px] md:flex lg:px-0 lg:gap-16 ">
             <div className="flex py-[6px] gap-[36px]">
               <img
                 src={Nus}
@@ -331,8 +343,8 @@ function WhoWeAre(props) {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-8 lg:flex lg:items-center lg:justify-center lg:gap-[130px]">
-          <p className="px-[30px] md:pr-[580px] lg:pr-0 pr-[230px] lg:text-red-500 md:text-amber-400  text-[#107AB7] leading-[42px] font-normal text-[28px] ">
+        <div className="grid grid-cols-1 gap-8 lg:flex lg:items-center lg:justify-center lg:gap-[200px]">
+          <p className="px-[80px] md:pr-[580px] lg:pr-0 pr-[230px] text-[#107AB7] leading-[42px] font-normal text-[28px] ">
             Trusted By
           </p>
           <div className="flex items-center justify-center">

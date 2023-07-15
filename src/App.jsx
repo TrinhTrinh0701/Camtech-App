@@ -11,6 +11,7 @@ import Product from "./views/Product";
 import ClinicalDiagnostics from "./views/Clinical Diagnostics";
 import FoodSafety from "./views/Food Safety";
 import BioDefense from "./views/BioDefense";
+import ContactUs from "./views/ContactUs";
 
 function App() {
   const location = useLocation();
@@ -23,6 +24,7 @@ function App() {
             <Route path="/technology" element={<Technology />} />
             <Route path="/whoweare" element={<WhoWeAre />} />
             <Route path="/product" element={<Product />} />
+            <Route path="/contact" element={<ContactUs />} />
             <Route
               path="clinicalDiagnostics"
               element={<ClinicalDiagnostics />}

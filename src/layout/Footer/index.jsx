@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RightOutlined } from "@ant-design/icons";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../asset/img/Logo/Logo white.png";
 import FB from "../../asset/img/facebook.png";
 import IG from "../../asset/img/instagram.png";
@@ -13,16 +13,18 @@ function Footer() {
     navigate("/");
   };
   return (
-    <div className="mt-[56px] h-full w-full ">
+    <div className="mt-[56px] h-full w-full">
       <div className="grid grid-cols-1 lg:flex lg:items-center lg:justify-center  md:flex md:px-[50px] md:gap-[100px] px-[170px] bg-[#C6EAFE] py-[56px]">
-        <div className=" font-light text-center pb-5 w-[340px] md:w-[500px] text-[40px] leading-[48px] h-full">
+        <div className=" font-light text-center w-[340px] md:w-[500px] text-[40px] leading-[48px] h-full">
           Ready to connect with us?
         </div>
         <div
           className="hover:bg-blue-900 w-[343px] md:w-[165px] items-center justify-center border-white border-2 
         flex h-full gap-1 py-[12px] text-white rounded-md bg-[#107AB7]"
         >
-          <button className="text-base font-bold">CONTACT US</button>
+          <Link to="/contact">
+            <button className="text-base font-bold">CONTACT US</button>
+          </Link>
           <div className="flex items-center justify-center text-xl">
             <RightOutlined></RightOutlined>
           </div>

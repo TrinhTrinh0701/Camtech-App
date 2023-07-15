@@ -4,24 +4,71 @@ import Slider from "../../asset/img/slider.png";
 import T1 from "../../asset/img/Technology/1.PNG";
 import T2 from "../../asset/img/Technology/2.PNG";
 import T3 from "../../asset/img/Technology/3.PNG";
+import { RightOutlined } from "@ant-design/icons";
+import { Link } from "react-router-dom";
+import { Typography } from "@material-tailwind/react";
+import C3 from "../../asset/img/carousel3.png";
 
 function Technology(props) {
   return (
     <div>
-      <img
-        src={Whyweare}
-        className="w-full max-h-[720px] object-cover"
-        alt=""
-        srcSet=""
-      />
       <div className="">
-        <div className="">
+        <img
+          src={Whyweare}
+          className="w-full h-[256px] object-cover top-0 left-0 right-0"
+          alt=""
+          srcSet=""
+        />
+        <div className="flex absolute z-3 top-[130px] px-[20%] lg:px-[10%]  md:px-[10%] w-full gap-[56px]">
+          <div className="flex justify-center gap-2 ">
+            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
+            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+            <p className="text-[#107AB7] leading-[16px] text-xs underline">
+              Technology
+            </p>
+          </div>
+          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
+            TECHNOLOGY
+          </p>
+        </div>
+      </div>
+      <div className="">
+        <div className="relative ">
           <img
-            src={Slider}
-            className="w-full max-h-[ 416px] object-cover"
+            src={C3}
+            className="w-full h-[650px] object-cover"
             alt=""
             srcSet=""
           />
+          <div className="absolute inset-0 grid items-center justify-center w-full h-full py-14 ">
+            <div className=" pl-[5px] t-[150px]">
+              <Typography variant="lead" color="white" className="">
+                <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
+                  <p className="leading-[42px] text-[28px] font-normal">
+                    A Leader in Diagnostics Technologies
+                  </p>
+                  <Link to="/product">
+                    <span className="text-[#09D3C2] leading-[32px] text-xl font-bold">
+                      Point-of-care testing through innovative technologies
+                    </span>
+                  </Link>
+                  <p className="leading-[32px] text-xl font-normal">
+                    We are using a range of technologies to transform healthcare
+                    diagnostics through point of care testing with low cost
+                    rapid and portable tests. Our innovation and technology
+                    cover a few areas - Microfluidics - Lateral flow assay -
+                    Optical biosensors
+                  </p>
+                  <p className="leading-[32px] text-xl font-normal">
+                    Combined with scalable and cost effective manufacturing
+                    precision techniques, these allow us to customize detection
+                    for various end clinical targets in affordable, reliable
+                    real world diagnostics.
+                  </p>
+                </div>
+              </Typography>
+            </div>
+          </div>
         </div>
         <div className="grid lg:pb-14  grid-cols-1 gap-6 mx-[25%] md:flex md:gap-6 md:mx-0 md:justify-center md:items-center lg:gap-[124px] ">
           <div className="">

@@ -7,24 +7,70 @@ import FS4 from "../../asset/img/Food Safety/4.PNG";
 import FS5 from "../../asset/img/Food Safety/5.PNG";
 import { RightOutlined, DownloadOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import { Typography } from "@material-tailwind/react";
+import C3 from "../../asset/img/carousel3.png";
 
 function FoodSafety(props) {
   return (
     <div>
-      <img
-        src={Whyweare}
-        className="w-full max-h-[720px] object-cover"
-        alt=""
-        srcSet=""
-      />
       <div className="">
-        <div className="">
+        <img
+          src={Whyweare}
+          className="w-full h-[256px] object-cover top-0 left-0 right-0"
+          alt=""
+          srcSet=""
+        />
+        <div className="flex absolute z-3 top-[130px] px-[20%] lg:px-[10%]  md:px-[10%] w-full gap-[56px]">
+          <div className="flex justify-center gap-2 ">
+            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
+            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+            <p className="text-[#107AB7] leading-[16px] text-xs underline">
+              Food Safety
+            </p>
+          </div>
+          <p className="text-[40px] absolute px-4  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
+            FOOD SAFETY
+          </p>
+        </div>
+      </div>
+      <div className="">
+        <div className="relative ">
           <img
-            src={Slider}
-            className="w-full max-h-[ 416px] object-cover"
+            src={C3}
+            className="w-full h-[650px] object-cover"
             alt=""
             srcSet=""
           />
+          <div className="absolute inset-0 grid items-center justify-center w-full h-full py-14 ">
+            <div className=" pl-[5px] t-[150px]">
+              <Typography variant="lead" color="white" className="">
+                <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
+                  <p className="leading-[42px] text-[28px] font-normal">
+                    Full Traceability from End to End
+                  </p>
+                  <Link to="/product">
+                    <span className="text-[#09D3C2] leading-[32px] text-xl font-bold">
+                      We work closely with market leaders in the food industry
+                      to produce solutions that truly meet their needs.
+                    </span>
+                  </Link>
+                  <p className="leading-[32px] text-xl font-normal">
+                    We have developed a broad range of food safety solutions and
+                    are capable of addressing newly emergent requirements
+                    through targeted R&D and our strong links with research and
+                    industry partners.
+                  </p>
+                  <p className="leading-[32px] text-xl font-normal">
+                    We aim to enable full traceability from end to end, by
+                    deploying the best technology for rapid detection of
+                    contaminants, toxins, pathogens at key points of the food
+                    supply chain thus ensuring the most reliable food safety
+                    standards for companies and consumers.
+                  </p>
+                </div>
+              </Typography>
+            </div>
+          </div>
         </div>
         <div className="grid grid-cols-1 gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center md:items-center md:gap-6 lg:gap-[124px] ">
           <img
@@ -85,7 +131,7 @@ function FoodSafety(props) {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center md:gap-6 md:bg-[#F7F7F9] lg:gap-[124px] ">
+        <div className="grid grid-cols-1 gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center md:gap-6 md:bg-[#F7F7F9] lg:gap-[124px] lg:flex-row-reverse ">
           <img
             src={FS3}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
@@ -210,7 +256,7 @@ function FoodSafety(props) {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:bg-[#F7F7F9] gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center lg:flex lg:gap-[124px] ">
+        <div className="grid grid-cols-1 md:bg-[#F7F7F9] gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center lg:flex lg:gap-[124px] lg:flex-row-reverse ">
           <img
             src={FS5}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
