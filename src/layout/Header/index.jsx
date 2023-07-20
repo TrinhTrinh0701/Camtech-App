@@ -191,7 +191,7 @@ function Header() {
                   <Link to="/contact">
                     <button className="text-base font-bold">CONTACT US</button>
                   </Link>
-                  <div className="flex items-center justify-center text-xl">
+                  <div className="flex items-center justify-center text-xl ">
                     <RightOutlined></RightOutlined>
                   </div>
                 </div>
