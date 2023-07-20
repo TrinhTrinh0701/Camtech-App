@@ -57,7 +57,10 @@ function Header() {
     onMouseEnter: () => setOpenMenu(true),
     onMouseLeave: () => setOpenMenu(false),
   };
-  const [text, setText] = useState(false);
+  const [text, setText] = useState({
+    1: "/whoweare",
+    2: "product",
+  });
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -67,17 +70,18 @@ function Header() {
     }
   };
   window.addEventListener("scroll", changeColor);
+
   return (
     <AnimatePresence mode="wait">
       <motion.div>
         <div
           className={
             color
-              ? "header fixed z-[997] top-0 max-w-[1536px] left-0 right-0 w-full text-[#107AB7] bg-cyan-500 shadow-lg shadow-cyan-500/50 "
-              : "fixed z-[997] top-0 left-0 right-0 w-full max-w-[1536px] text-white "
+              ? "header   fixed z-[997] top-0 max-w-[1536px] left-0 right-0 w-full text-[#107AB7] bg-cyan-500 shadow-lg shadow-cyan-500/50 "
+              : "fixed  z-[997] top-0 left-0 right-0 w-full max-w-[1536px] text-white "
           }
         >
-          <div className="relative flex gap-[135px] lg:gap-8 justify-center items-center h-full py-[24px] z-10">
+          <div className="relative flex gap-[100px] lg:gap-8 justify-center items-center h-full py-[24px] z-10">
             <div className="lg:pr-[300px]">
               {color ? (
                 <img
@@ -108,7 +112,7 @@ function Header() {
                   Home
                 </Link>
               </div>
-              <div className="leading-[26px] text-base font-semibold">
+              <div className=" leading-[26px] text-base font-semibold">
                 <Link
                   to="/whoweare"
                   className={`${styles.link} ${
@@ -205,7 +209,7 @@ function Header() {
                     : "fixed right-[-100%]"
                 }
               >
-                <div className="flex flex-col lg:hidden  gap-4 px-[24px] ">
+                <div className="flex text-white flex-col lg:hidden  gap-4 px-[24px] ">
                   <div onClick={() => setShowMenu(true)} className="">
                     <CloseOutlined className="flex justify-end p-4 mb-2 cursor-pointer"></CloseOutlined>
                   </div>

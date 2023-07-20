@@ -40,7 +40,11 @@ function Technology(props) {
             alt=""
             srcSet=""
           />
-          <div className="absolute inset-0 grid items-center justify-center w-full h-full py-14 ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="absolute inset-0 grid items-center justify-center w-full h-full py-14 "
+          >
             <div className=" pl-[5px] t-[150px]">
               <Typography variant="lead" color="white" className="">
                 <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
@@ -70,9 +74,15 @@ function Technology(props) {
             </div>
           </div>
         </div>
-        <div className="grid lg:pb-14  grid-cols-1 gap-6 mx-[25%] md:flex md:gap-6 md:mx-0 md:justify-center md:items-center lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" lg:pb-14  flex flex-col md:flex-row justify-center items-center gap-6  md:flex md:gap-6 md:mx-0 md:justify-center md:items-center lg:gap-[124px] "
+        >
           <div className="">
             <img
+              data-aos="zoom-out-up"
+              data-aos-duration="500"
               src={T1}
               alt=""
               className="bg-[#CFE4F1] md:mt-5 w-[380px] h-[235px] mt-14 lg:w-[564px] lg:h-[378px] lg:mt-14"
@@ -91,9 +101,15 @@ function Technology(props) {
             </p>
           </div>
         </div>
-        <div className="grid lg:pb-14 md:bg-[#F7F7F9] lg:bg-[#F7F7F9] grid-cols-1 gap-6 mx-[25%] md:flex md:gap-6 md:mx-0 md:justify-center md:items-center lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" lg:pb-14 md:bg-[#F7F7F9] lg:bg-[#F7F7F9] md:flex-row  flex flex-col justify-center items-center  gap-6  md:flex md:gap-6 md:mx-0 md:justify-center md:items-center lg:gap-[124px] "
+        >
           <div className="">
             <img
+              data-aos="zoom-out-up"
+              data-aos-duration="500"
               src={T2}
               alt=""
               className="bg-[#CFE4F1] md:mt-5 w-[380px] h-[235px] mt-14 lg:w-[564px] lg:h-[378px] lg:mt-14"
@@ -112,9 +128,15 @@ function Technology(props) {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 mx-[25%] md:flex md:gap-6 md:mx-0 md:justify-center md:items-center lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" flex flex-col justify-center items-center md:flex-row gap-6 md:flex  md:gap-6 md:mx-0 md:justify-center md:items-center lg:gap-[124px] "
+        >
           <div className="">
             <img
+              data-aos="zoom-out-up"
+              data-aos-duration="500"
               src={T3}
               alt=""
               className="bg-[#CFE4F1] md:mt-5 w-[380px] h-[235px] mt-14 lg:w-[564px] lg:h-[378px] lg:mt-14"

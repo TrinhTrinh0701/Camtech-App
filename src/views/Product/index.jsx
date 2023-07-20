@@ -31,15 +31,17 @@ function Product() {
         </div>
       </div>
       <div className="">
-        <div className="grid grid-cols-1 py-14 mx-[25%] md:mx-0">
-          <div className="grid grid-cols-1 gap-6 md:flex md:gap-6 md:justify-center md:items-center lg:gap-[124px]">
+        <div className="flex flex-col justify-center py-14">
+          <div className="flex flex-col gap-6 md:flex px-4 md:px-6 md:flex-row md:gap-6 md:justify-center md:items-center lg:gap-[124px]">
             <img
+              data-aos="zoom-out-up"
+              data-aos-duration="500"
               src={CD}
               className="w-full h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"
               alt=""
               srcSet=""
             />
-            <div className="w-[343px] grid grid-cols-1 gap-6 lg:w-[464px] ">
+            <div className=" flex flex-col gap-6 lg:w-[464px] ">
               <p className="text-[#107AB7] leading-[42px] text-[28px]">
                 Clinical Diagnostics
               </p>
@@ -59,15 +61,21 @@ function Product() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 py-14 mx-[25%] md:mx-0">
-          <div className="grid grid-cols-1 bg-[#F7F7F9] gap-6 md:flex md:gap-6 md:justify-center md:items-center lg:flex-row-reverse lg:gap-[124px]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col justify-center px-4 py-14"
+        >
+          <div className="flex flex-col bg-[#F7F7F9] gap-6 md:flex md:flex-row md:gap-6 md:justify-center md:items-center lg:flex-row-reverse lg:gap-[124px]">
             <img
+              data-aos="zoom-out-up"
+              data-aos-duration="500"
               src={FS}
-              className="w-[343px] h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"
+              className="w-full h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"
               alt=""
               srcSet=""
             />
-            <div className="w-[343px] grid grid-cols-1 gap-6 lg:w-[464px] ">
+            <div className="flex flex-col gap-6 lg:w-[464px] ">
               <p className="text-[#107AB7] leading-[42px] text-[28px]">
                 Food Safety
               </p>
@@ -86,15 +94,21 @@ function Product() {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 py-14 mx-[25%] md:mx-0">
-          <div className="grid grid-cols-1  gap-6 md:flex md:gap-6 md:justify-center md:items-center lg:gap-[124px]">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col justify-center px-4 py-14"
+        >
+          <div className="flex flex-col gap-6 md:flex md:gap-6 md:flex-row md:justify-center md:items-center lg:gap-[124px]">
             <img
+              data-aos="zoom-out-up"
+              data-aos-duration="500"
               src={BF}
-              className="w-[343px] h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"
+              className="w-full h-[229px] object-cover md:w-[370px] md:h-[290px] lg:w-[620px] lg:h-[378px]"
               alt=""
               srcSet=""
             />
-            <div className="w-[343px] grid grid-cols-1 gap-6 lg:w-[464px] ">
+            <div className="flex flex-col gap-6 lg:w-[464px] ">
               <p className="text-[#107AB7] leading-[42px] text-[28px]">
                 Biodefense
               </p>

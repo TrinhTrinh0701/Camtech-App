@@ -54,7 +54,11 @@ function WhoWeAre(props) {
             alt=""
             srcSet=""
           />
-          <div className="absolute inset-0 grid items-center justify-center w-full h-full ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="absolute inset-0 grid items-center justify-center w-full h-full "
+          >
             <div className=" pl-[5px] t-[150px] md:px-[5%]">
               <Typography
                 variant="lead"
@@ -72,91 +76,115 @@ function WhoWeAre(props) {
             </div>
           </div>
         </div>
-        <div className="grid lg:pb-2 grid-cols-1 gap-6 lg:gap-[130px] md:flex md:justify-center md:items-center md:gap-10 ">
-          <div className="flex flex-col items-center justify-center gap-4 font-normal ">
-            <p className="pr-[200px] text-[#107AB7] leading-[42px] text-[28px]">
-              Our Vision
-            </p>
-            <p className="text-[#484848] text-base leading-[26px]">
-              Providing Novel Lab-based and Point-of-Care<br></br> diagnostic
-              tests and actionable insights from<br></br> real-time data to
-              customers all the time,<br></br>
-              anywhere.
-            </p>
-          </div>
-          <div className="flex items-center justify-center">
-            <img
-              src={Our}
-              className="w-[343px] max-h-[234px]  object-cover lg:w-[564px] lg:h-full"
-              alt=""
-              srcSet=""
-            />
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="grid grid-cols-1 gap-6 lg:pb-2 md:flex md:justify-center md:items-center md:gap-10 "
+        >
+          <div className=" flex flex-col md:flex md:flex-row gap-14 justify-center items-center lg:flex lg:gap-[122px]">
+            <div className="lg:flex-col lg:flex lg:gap-[34px] flex flex-col gap-4 ">
+              <div className="flex flex-col gap-4 font-normal">
+                <p className="pr-[200px] text-[#107AB7] leading-[42px] text-[28px]">
+                  Our Vision
+                </p>
+                <p className="text-[#484848] text-base leading-[26px]">
+                  Providing Novel Lab-based and Point-of-Care <br />
+                  diagnostic tests and actionable insights from <br />
+                  real-time data to customers all the time,
+                  <br />
+                  anywhere.
+                </p>
+              </div>
+
+              <div className="flex flex-col gap-4 font-normal ">
+                <p className=" py-4 text-[#107AB7] leading-[42px] text-[28px]">
+                  What We Do
+                </p>
+                <p className="text-[#484848] text-base leading-[26px]">
+                  Our detection platforms provide the basis for <br />
+                  reliability, customisation and scalability in <br />
+                  delivering rapid testing solutions. <br /> <br /> Based on
+                  these platforms, we have developed <br /> and commercialised a
+                  range of testing solutions <br /> for biodefence, food safety
+                  and clinical <br /> diagnostics applications, that aim to
+                  disrupt
+                  <br />
+                  current lab-based testing approaches.
+                </p>
+              </div>
+              <div className="flex flex-col gap-4 font-normal">
+                <p className="pr-[150px] text-[#107AB7] leading-[42px] text-[28px]">
+                  Our Story
+                </p>
+                <p className="text-[#484848] text-base leading-[26px]">
+                  Founded in 2013, Camtech Diagnostics has built <br />
+                  significant R&D and Manufacturing capabilities to <br />
+                  support these developments as an integrated <br />
+                  diagnostics provider.
+                  <br /> <br />
+                  Our continual and long-term investment in
+                  <br /> innovation allows us to meet rapidly evolving
+                  <br />
+                  market requirements and provide best in class
+                  <br />
+                  solutions.
+                </p>
+              </div>
+            </div>
+            <div className="lg:flex gap-12 flex flex-col lg:flex-col lg:gap-[150px] justify-center items-center">
+              <div data-aos="fade-left" data-aos-duration="500" className="">
+                <img
+                  src={Our}
+                  className="lg:w-[550px] lg:h-[400px] w-[343px]"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+              <div data-aos="fade-left" data-aos-duration="500" className="">
+                <img
+                  src={OurStory}
+                  className="lg:w-[550px] lg:h-[250px] w-[343px]"
+                  alt=""
+                  srcSet=""
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="grid  grid-cols-1 gap-6 md:flex md:items-center md:justify-center lg:items-start lg:justify-start lg:px-[250px] lg:flex-col ">
-          <div className="flex lg:pb-[64px] flex-col items-center justify-center gap-4 font-normal">
-            <div className="">
-              <p className="pr-[200px] py-4 text-[#107AB7] leading-[42px] text-[28px]">
-                What We Do
-              </p>
-              <p className="text-[#484848] text-base leading-[26px]">
-                Our detection platforms provide the basis for<br></br>{" "}
-                reliability, customisation and scalability in<br></br>{" "}
-                delivering rapid testing solutions.<br></br> <br></br> Based on
-                these platforms, we have developed<br></br> and commercialised a
-                range of testing solutions <br></br> for biodefence, food safety
-                and clinical<br></br> diagnostics applications, that aim to
-                disrupt
-                <br></br>
-                current lab-based testing approaches.
-              </p>
-            </div>
-          </div>
-          <div className="grid grid-cols-1 px-[150px] md:px-0 lg:flex lg:gap-[200px] lg:px-0 gap-4 font-normal">
-            <div className="flex flex-col gap-6">
-              <p className="pr-[150px] text-[#107AB7] leading-[42px] text-[28px]">
-                Our Story
-              </p>
-              <p className="text-[#484848] text-base leading-[26px]">
-                Founded in 2013, Camtech Diagnostics has built<br></br>{" "}
-                significant R&D and Manufacturing capabilities to<br></br>{" "}
-                support these developments as an integrated<br></br> diagnostics
-                provider.
-                <br></br> <br></br>Our continual and long-term investment in
-                <br></br> innovation allows us to meet rapidly evolving<br></br>{" "}
-                market requirements and provide best in class<br></br>{" "}
-                solutions.
-              </p>
-            </div>
-            <div className="lg:block md:hidden sm:hidden">
-              <img
-                src={OurStory}
-                className="w-[368px] max-h-[248px]  object-cover"
-                alt=""
-                srcSet=""
-              />
-            </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 gap-8 lg:flex lg:gap-[150px] lg:items-center lg:justify-center">
-          <p className="flex items-center justify-center md:pr-[550px] lg:pr-0 pr-[180px] font-normal text-[#107AB7] leading-[42px] text-[28px]">
+
+        <div className="flex-col flex justify-center items-center gap-8 lg:flex lg:flex-row lg:gap-[150px] lg:items-center lg:justify-center">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex justify-center items-center md:pr-[550px] lg:pr-0 pr-[180px] font-normal text-[#107AB7] leading-[42px] text-[28px]"
+          >
             Our Partners
           </p>
-          <div className="grid grid-cols-1 gap-6 px-[170px] md:px-[80px] md:flex lg:px-0 lg:gap-16 ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex-col flex justify-center items-center gap-6 md:px-[80px] md:flex md:flex-row lg:px-0 lg:gap-16 "
+          >
             <div className="flex py-[6px] gap-[36px]">
               <img
+                data-aos="fade-left"
+                data-aos-duration="500"
                 src={Nus}
                 className="w-[80px] h-[36px] object-cover"
                 alt=""
                 srcSet=""
               />
               <img
+                data-aos="fade-left"
+                data-aos-duration="500"
                 src={Enterprise}
                 className="w-[98px] h-[34px] object-cover"
                 alt=""
                 srcSet=""
               />
               <img
+                data-aos="fade-left"
+                data-aos-duration="500"
                 src={A}
                 className="w-[92px] h-[44px] object-cover"
                 alt=""
@@ -165,12 +193,16 @@ function WhoWeAre(props) {
             </div>
             <div className="flex py-[5px] gap-[30px]">
               <img
+                data-aos="fade-left"
+                data-aos-duration="500"
                 src={Ucl}
                 className="w-[127px] h-[37px] object-cover"
                 alt=""
                 srcSet=""
               />
               <img
+                data-aos="fade-left"
+                data-aos-duration="500"
                 src={University}
                 className="w-[163px] h-[42px] object-cover"
                 alt=""
@@ -180,12 +212,22 @@ function WhoWeAre(props) {
           </div>
         </div>
         <div className="bg-[#F7F7F9] items-center justify-center flex flex-col pb-[80px] gap-14">
-          <p className=" md:pr-[500px] lg:pr-[820px] pr-[150px] mt-14 font-normal text-[#107AB7] leading-[42px] text-[28px]">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" md:pr-[500px] lg:pr-[820px] pr-[150px] mt-14 font-normal text-[#107AB7] leading-[42px] text-[28px]"
+          >
             Team Members
           </p>
           <div className="flex flex-col gap-8">
-            <div className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+            >
               <img
+                data-aos="zoom-out-up"
+                data-aos-duration="500"
                 src={Avatar}
                 className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
                 alt=""
@@ -215,8 +257,14 @@ function WhoWeAre(props) {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+            >
               <img
+                data-aos="zoom-out-up"
+                data-aos-duration="500"
                 src={Avatar2}
                 className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
                 alt=""
@@ -246,8 +294,14 @@ function WhoWeAre(props) {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+            >
               <img
+                data-aos="zoom-out-up"
+                data-aos-duration="500"
                 src={Avatar3}
                 className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
                 alt=""
@@ -277,8 +331,14 @@ function WhoWeAre(props) {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+            >
               <img
+                data-aos="zoom-out-up"
+                data-aos-duration="500"
                 src={Avatar4}
                 className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
                 alt=""
@@ -307,8 +367,14 @@ function WhoWeAre(props) {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+            >
               <img
+                data-aos="zoom-out-up"
+                data-aos-duration="500"
                 src={Avatar5}
                 className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
                 alt=""
@@ -343,40 +409,58 @@ function WhoWeAre(props) {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-8 lg:flex lg:items-center lg:justify-center lg:gap-[200px]">
-          <p className="px-[80px] md:pr-[580px] lg:pr-0 pr-[230px] text-[#107AB7] leading-[42px] font-normal text-[28px] ">
+        <div className="flex-col justify-center items-center flex gap-8 lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[200px]">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className=" md:pr-[580px] lg:pr-0 pr-[230px] text-[#107AB7] leading-[42px] font-normal text-[28px] "
+          >
             Trusted By
           </p>
-          <div className="flex items-center justify-center">
-            <div className="grid grid-cols-1 gap-[32px] md:flex lg:gap-[60px] ">
-              <div className="flex gap-14">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex items-center justify-center"
+          >
+            <div className="flex-col flex items-center justify-center gap-[32px] md:flex md:flex-row lg:gap-[60px] ">
+              <div className="flex gap-[56px]">
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="500"
                   src={Nestle}
                   alt=""
                   srcSet=""
                   className=" w-[76px] h-[76px] object-contain "
                 />
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="500"
                   src={SimeDarby}
                   alt=""
                   srcSet=""
                   className=" w-[76px] h-[76px] object-contain "
                 />
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="500"
                   src={MusimMas}
                   alt=""
                   srcSet=""
                   className=" w-[76px] h-[76px] object-contain "
                 />
               </div>
-              <div className="flex gap-10">
+              <div className="flex gap-14">
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="500"
                   src={Winlmar}
                   alt=""
                   srcSet=""
                   className=" w-[124px]  h-[47px] object-contain "
                 />
                 <img
+                  data-aos="fade-left"
+                  data-aos-duration="500"
                   src={Gar}
                   alt=""
                   srcSet=""

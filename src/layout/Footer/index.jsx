@@ -14,7 +14,7 @@ function Footer() {
   };
   return (
     <div className="mt-[56px] h-full w-full">
-      <div className="grid grid-cols-1 lg:flex lg:items-center lg:justify-center  md:flex md:px-[50px] md:gap-[100px] px-[170px] bg-[#C6EAFE] py-[56px]">
+      <div className="flex flex-col items-center justify-center lg:flex lg:items-center lg:justify-center md:flex md:flex-row md:px-[50px] md:gap-[100px]  bg-[#C6EAFE] py-[56px]">
         <div className=" font-light text-center w-[340px] md:w-[500px] text-[40px] leading-[48px] h-full">
           Ready to connect with us?
         </div>
@@ -31,7 +31,7 @@ function Footer() {
         </div>
       </div>
       <div className="  h-full w-full  bg-[#123C54]">
-        <div className="px-4 lg:gap-[120px]  md:px-6 gap-[48px] lg:px-[124px] grid grid-cols-1 lg:flex ">
+        <div className="px-4 lg:gap-[120px]  md:px-6 gap-[48px] lg:px-[124px] flex flex-col lg:flex lg:flex-row ">
           <div className="flex flex-col mt-12 min-w-[368px] ">
             <img
               src={Logo}

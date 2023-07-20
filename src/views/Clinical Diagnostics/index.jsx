@@ -39,7 +39,11 @@ function ClinicalDiagnostics(props) {
             alt=""
             srcSet=""
           />
-          <div className="absolute inset-0 grid items-center justify-center w-full h-full py-14 ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="absolute inset-0 grid items-center justify-center w-full h-full py-14 "
+          >
             <div className=" pl-[5px] t-[150px]">
               <Typography variant="lead" color="white" className="">
                 <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
@@ -79,8 +83,14 @@ function ClinicalDiagnostics(props) {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center lg:flex lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col items-center justify-center gap-6 py-14 md:flex md:flex-row md:justify-center lg:flex lg:gap-[124px] "
+        >
           <img
+            data-aos="fade-left"
+            data-aos-duration="500"
             src={CD1}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -124,11 +134,19 @@ function ClinicalDiagnostics(props) {
             </div>
           </div>
         </div>
-        <p className="text-[#107AB7] leading-[42px] text-[28px] pb-6 mx-[25%] md:mx-6 lg:mx-[124px] ">
+        <p
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="text-[#107AB7] leading-[42px] text-[28px] pb-6 mx-[25%] md:mx-6 lg:mx-[124px] "
+        >
           Other COVID-19 Products
         </p>
-        <div className="grid grid-cols-1 gap-6 w-[373px] mx-[25%] pb-14 md:mx-6 lg:px-[50px] md:grid md:grid-cols-2 md:gap-6 md:w-[800px] lg:flex lg:gap-6 lg:items-center lg:justify-center ">
-          <div className="flex flex-col gap-6 md:w-[300px]  lg:w-[320px]">
+        <div className="grid grid-cols-1 gap-6 w-[373px] mx-[25%] pb-14 md:mx-6 md:grid md:grid-cols-2 md:gap-6 md:w-[800px] lg:w-full lg:flex lg:gap-6 lg:items-center lg:justify-center ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col gap-6 md:w-[300px]  lg:w-[320px]"
+          >
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"
@@ -144,7 +162,11 @@ function ClinicalDiagnostics(props) {
               virus variant (B.1.1.7).
             </p>
           </div>
-          <div className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]"
+          >
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"
@@ -160,7 +182,11 @@ function ClinicalDiagnostics(props) {
               handrails. Speedy evaluation of the cleanliness of surfaces.
             </p>
           </div>
-          <div className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]"
+          >
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"
@@ -176,7 +202,11 @@ function ClinicalDiagnostics(props) {
               asymptomatic cases.
             </p>
           </div>
-          <div className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]"
+          >
             <img
               src={T1}
               className="w-[380px] h-[235px] object-cover"
@@ -193,7 +223,11 @@ function ClinicalDiagnostics(props) {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-center cursor-pointer">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          className="flex items-center justify-center cursor-pointer"
+        >
           <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-base rounded-md w-[343px] py-3 px-6 border border-[#107AB7]">
             Visit Website
           </button>

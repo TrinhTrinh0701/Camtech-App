@@ -64,7 +64,11 @@ function ContactUs(props) {
         </div>
       </div>
       <div className="lg:flex lg:gap-[522px] lg:justify-center lg:items-center lg:pb-14">
-        <div className="py-[64px] lg:py-0 mx-[25%] md:mx-[10%] lg:mx-0 ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="py-[64px] lg:py-0 mx-[25%] md:mx-[10%] lg:mx-0 "
+        >
           <p className="leading-[32px] font-bold text-xl text-[#107AB7]">
             SALES ENQUIRIES
           </p>
@@ -174,7 +178,11 @@ function ContactUs(props) {
         <div className="flex items-center justify-center lg:hidden">
           <span className="border-2 border-[#E5E5E5] flex w-[343px] md:w-[720px]"></span>
         </div>
-        <div className="py-[64px] mx-[25%] grid grid-cols-1 gap-14 md:mx-[10%] lg:mx-0 lg:py-0 ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="py-[64px] mx-[25%] grid grid-cols-1 gap-14 md:mx-[10%] lg:mx-0 lg:py-0 "
+        >
           <div className="lg:pt-24">
             <p className="leading-[32px] text-xl font-bold text-[#107AB7]">
               GET IN TOUCH
@@ -226,7 +234,7 @@ function ContactUs(props) {
           </div>
         </div>
       </div>
-      <div className="">
+      <div data-aos="fade-up" data-aos-duration="3000" className="">
         <div className="relative">
           <img src={Map} alt="" className="" />
           <div className="absolute top-28 left-20 z-2">

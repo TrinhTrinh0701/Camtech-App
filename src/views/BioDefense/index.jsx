@@ -50,7 +50,7 @@ export default function BioDefense() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 py-16 gap-14 md:flex lg:gap-16 md:gap-6 md:justify-center md:items-center">
+      <div className="flex flex-col items-center justify-center py-16 gap-14 md:flex md:flex-row lg:gap-16 md:gap-6 md:justify-center md:items-center">
         <div className="hidden cursor-pointer lg:block">
           <img
             src={image.img1}
@@ -112,8 +112,8 @@ export default function BioDefense() {
             />
           </Carousel>
         </div>
-        <div className="">
-          <div className="grid grid-cols-1 gap-6  mx-[25%] md:mx-0 md:flex md:justify-center md:gap-6 lg:gap-[124px] lg:flex-row-reverse ">
+        <div data-aos="fade-up" data-aos-duration="3000" className="">
+          <div className="flex flex-col justify-center items-center  md:flex md:justify-center md:gap-6 lg:gap-[124px] lg:flex-row-reverse ">
             <div className="flex flex-col gap-6 lg:px-6 w-[373px] lg:w-[564px]">
               <p className="text-[#107AB7] leading-[42px] text-[28px]">
                 Camthrax Biothreat Detector
@@ -145,12 +145,16 @@ export default function BioDefense() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-[32px] py-14 mx-[25%] md:mx-0 md:bg-[#F7F7F9]">
-        <p className="text-[#123C54] leading-[32px] text-xl lg:px-[190px] md:px-[70px] font-bold">
+      <div className="flex flex-col gap-[32px] py-14 px-4 md:px-6  md:bg-[#F7F7F9]">
+        <p className="text-[#123C54] leading-[32px] text-xl font-bold lg:px-[124px]">
           Features
         </p>
-        <div className="grid grid-cols-1 lg:grid lg:grid-cols-3 lg:gap-6 lg:mx-[12%]  gap-[32px] md:flex md:flex-col md:justify-center md:items-center">
-          <div className="grid grid-cols-1 gap-8 w-[343px] md:grid lg:w-[368px] md:grid-cols-2 lg:grid-cols-none md:w-[720px] ">
+        <div className="flex flex-col justify-center items-center lg:grid lg:grid-cols-3 lg:gap-6 lg:px-[124px]  gap-[32px] md:flex md:flex-col md:justify-center md:items-center">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="grid grid-cols-1 gap-8 w-[343px] md:grid lg:w-[368px] md:grid-cols-2 lg:grid-cols-none md:w-[720px] "
+          >
             <div className="">
               <p className="leading-[32px] text-xl font-bold text-[#107AB7]">
                 Forget wet chemistry
@@ -172,7 +176,11 @@ export default function BioDefense() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-8 w-[343px] lg:w-[368px] md:grid md:grid-cols-2 md:w-[720px] lg:grid-cols-none">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col gap-8 w-[343px] lg:w-[368px] md:grid md:grid-cols-2 md:w-[720px] lg:grid-cols-none"
+          >
             <div className="">
               <p className="leading-[32px] text-xl font-bold text-[#107AB7]">
                 Clear multiple targets with ease
@@ -194,7 +202,11 @@ export default function BioDefense() {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-8 w-[343px] lg:w-[368px] md:grid md:grid-cols-2 md:w-[720px] lg:grid-cols-none">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col gap-8 w-[343px] lg:w-[368px] md:grid md:grid-cols-2 md:w-[720px] lg:grid-cols-none"
+          >
             <div className="">
               <p className="leading-[32px] text-xl font-bold text-[#107AB7]">
                 Because the frontline can be rough
@@ -220,8 +232,12 @@ export default function BioDefense() {
           </div>
         </div>
       </div>
-      <div className=" mx-[25%] md:mx-0 md:flex md:gap-6 lg:gap-[100px] md:pt-14 md:items-center md:justify-center">
-        <div className="flex flex-col gap-4 py-14 w-[343px] lg:w-[368px]">
+      <div className="flex flex-col justify-center items-center  md:flex-row md:flex md:gap-6 lg:gap-[100px] md:pt-14 md:items-center md:justify-center">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col gap-4 py-14 w-[343px] lg:w-[368px]"
+        >
           <img src={VideoFile} alt="" className="w-[48px] h-[32px]" />
           <p className="leading-[32px] text-xl font-bold tex-[#484848]">
             Camthrax Handheld Detector
@@ -232,7 +248,7 @@ export default function BioDefense() {
             Diagnostics.
           </p>
         </div>
-        <div className="">
+        <div data-aos="fade-up" data-aos-duration="3000" className="">
           <iframe
             width="343"
             height="315"

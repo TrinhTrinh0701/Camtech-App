@@ -41,7 +41,11 @@ function FoodSafety(props) {
             alt=""
             srcSet=""
           />
-          <div className="absolute inset-0 grid items-center justify-center w-full h-full py-14 ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="absolute inset-0 grid items-center justify-center w-full h-full py-14 "
+          >
             <div className=" pl-[5px] t-[150px]">
               <Typography variant="lead" color="white" className="">
                 <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
@@ -72,8 +76,14 @@ function FoodSafety(props) {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center md:items-center md:gap-6 lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col justify-center items-center gap-6 py-14  md:flex-row md:flex md:justify-center md:items-center md:gap-6 lg:gap-[124px] "
+        >
           <img
+            data-aos="fade-left"
+            data-aos-duration="500"
             src={FS2}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -131,8 +141,14 @@ function FoodSafety(props) {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center md:gap-6 md:bg-[#F7F7F9] lg:gap-[124px] lg:flex-row-reverse ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col justify-center items-center gap-6 py-14  md:flex-row  md:flex md:justify-center md:gap-6 md:bg-[#F7F7F9] lg:gap-[124px] lg:flex-row-reverse "
+        >
           <img
+            data-aos="fade-left"
+            data-aos-duration="500"
             src={FS3}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -195,8 +211,14 @@ function FoodSafety(props) {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1  gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col justify-center items-center gap-6 py-14  md:flex-row md:flex md:justify-center lg:gap-[124px] "
+        >
           <img
+            data-aos="fade-left"
+            data-aos-duration="500"
             src={FS4}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -256,8 +278,14 @@ function FoodSafety(props) {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:bg-[#F7F7F9] gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center lg:flex lg:gap-[124px] lg:flex-row-reverse ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col justify-center items-center md:bg-[#F7F7F9] gap-6 py-14  md:flex-row  md:flex md:justify-center lg:flex lg:gap-[124px] lg:flex-row-reverse "
+        >
           <img
+            data-aos="fade-left"
+            data-aos-duration="500"
             src={FS5}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -293,8 +321,14 @@ function FoodSafety(props) {
             </Link>
           </div>
         </div>
-        <div className="grid grid-cols-1  gap-6 py-14 mx-[25%] md:mx-0 md:flex md:justify-center lg:flex lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="flex flex-col justify-center items-center  gap-6 py-14 md:flex-row md:flex md:justify-center lg:flex lg:gap-[124px] "
+        >
           <img
+            data-aos="fade-left"
+            data-aos-duration="500"
             src={FS3}
             className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
