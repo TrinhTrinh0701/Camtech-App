@@ -43,6 +43,7 @@ function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
   const { pathname } = useLocation();
+  const location = useLocation();
   const navigateToHome = () => {
     navigate("/");
   };
@@ -51,7 +52,10 @@ function Header() {
   };
 
   const [openMenu, setOpenMenu] = React.useState(false);
-  const [isHome, setIsHome] = React.useState(false);
+  const [isHome, setIsHome] = React.useState(true);
+  useEffect(() => {
+    setIsHome(location.pathname === "/");
+  }, [location.pathname]);
 
   const triggers = {
     onMouseEnter: () => setOpenMenu(true),
@@ -71,19 +75,32 @@ function Header() {
   };
   window.addEventListener("scroll", changeColor);
 
+  const getHeaderStyle = () => {
+    if (isHome && color) {
+      return { backgroundColor: "white", color: "#107AB7" };
+    } else if (isHome && !color) {
+      return { backgroundColor: "transparent", color: "white" };
+    } else if (!isHome && color) {
+      return { backgroundColor: "white", color: "#107AB7" };
+    } else {
+      return { backgroundColor: "transparent", color: "#107AB7" };
+    }
+  };
+
   return (
     <AnimatePresence mode="wait">
       <motion.div>
         <div
+          style={getHeaderStyle()}
           className={
             color
-              ? "header fixed z-[997] top-0 left-0 right-0 w-full text-[#107AB7] bg-cyan-500 shadow-lg shadow-cyan-500/50 "
-              : "fixed z-[997] top-0 left-0 right-0 w-full text-white "
+              ? "header fixed z-[997] top-0 left-0 right-0 w-full bg-cyan-500 shadow-lg shadow-cyan-500/50 "
+              : "fixed z-[997] top-0 left-0 right-0 w-full "
           }
         >
           <div className="relative flex gap-[100px] lg:gap-8 justify-center items-center h-full py-[24px] z-10">
             <div className="lg:pr-[300px]">
-              {color ? (
+              {color || !isHome ? (
                 <img
                   src={Logo}
                   className="h-[56px] w-[190px] cursor-pointer object-cover"
@@ -127,6 +144,7 @@ function Header() {
                   <Button
                     {...triggers}
                     variant="text"
+                    style={getHeaderStyle()}
                     className={
                       color
                         ? "leading-[26px] py-0 text-base font-semibold capitalize bg-white text-[#107AB7]"
@@ -183,7 +201,7 @@ function Header() {
               <div className="hidden cursor-pointer md:block ">
                 <div
                   className={
-                    color
+                    color || !isHome
                       ? " flex  gap-1  py-[12px] px-[24px] rounded-md border border-[#107AB7]   "
                       : "flex  gap-1 py-[12px] px-[24px] rounded-md border border-white "
                   }

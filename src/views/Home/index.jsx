@@ -72,7 +72,7 @@ function Home() {
                   className="object-cover w-[60%] lg:w-[35%] lg:left-[7%] md:left-[23%] lg:h-[50%] left-[120px] shadow-2xl h-[30%] absolute b rounded-2xl"
                 />
               </div>
-              <div className="w-full px-4 md:px-6 lg:px-[124px]">
+              <div className="w-full lg:w-[800px]">
                 <Typography
                   variant="h1"
                   color="white"
