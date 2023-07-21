@@ -166,7 +166,11 @@ function Home() {
           </div>
         </Carousel>
       </div>
-      <div className="flex flex-col gap-[24px] justify-center items-center px-4 md:w-full md:justify-center md:items-center lg:px-[124px]  lg:items-start ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="flex flex-col gap-[24px] justify-center items-center px-4 md:w-full md:justify-center md:items-center lg:px-[124px]  lg:items-start "
+      >
         <p className="text-[#107AB7] font-normal md:pr-[200px] leading-[42px] text-[28px]">
           {" "}
           We Offer a Wide-Range of Products
