@@ -19,7 +19,7 @@ function Technology(props) {
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-3 top-[130px] px-[20%] lg:px-[10%]  md:px-[10%] w-full gap-[56px]">
+        <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
           <div className="flex justify-center gap-2 ">
             <p className="text-[#484848] text-xs leading-[16px]">Home</p>
             <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
@@ -45,7 +45,7 @@ function Technology(props) {
             data-aos-duration="3000"
             className="absolute inset-0 grid items-center justify-center w-full h-full py-14 "
           >
-            <div className=" pl-[5px] t-[150px]">
+            <div className="w-full t-[150px]">
               <Typography variant="lead" color="white" className="">
                 <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
                   <p className="leading-[42px] text-[28px] font-normal">

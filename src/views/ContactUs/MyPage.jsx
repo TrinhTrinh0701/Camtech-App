@@ -50,7 +50,7 @@ function ContactUs(props) {
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-1 top-[130px] px-[20%] lg:px-[10%]  md:px-[10%] w-full gap-[56px]">
+        <div className="flex absolute z-1 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
           <div className="flex justify-center gap-2 ">
             <p className="text-[#484848] text-xs leading-[16px]">Home</p>
             <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
@@ -63,12 +63,8 @@ function ContactUs(props) {
           </p>
         </div>
       </div>
-      <div className="lg:flex lg:gap-[522px] lg:justify-center lg:items-center lg:pb-14">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          className="py-[64px] lg:py-0 mx-[25%] md:mx-[10%] lg:mx-0 "
-        >
+      <div className="lg:flex lg:flex-row lg:gap-[522px] flex flex-col md:justify-start md:items-start md:px-6 justify-center items-center lg:justify-center lg:items-center lg:pb-14">
+        <div className="py-[64px] lg:py-0  ">
           <p className="leading-[32px] font-bold text-xl text-[#107AB7]">
             SALES ENQUIRIES
           </p>

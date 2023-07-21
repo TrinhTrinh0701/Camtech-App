@@ -23,17 +23,17 @@ import C1 from "../../asset/img/carousel.png";
 import { Typography } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 
-function WhoWeAre(props) {
+function WhoWeAre() {
   return (
-    <div className="">
-      <div className="">
+    <div className="w-full">
+      <div className="w-full">
         <img
           src={Whyweare}
           className="w-full h-[256px] object-cover top-0 left-0 right-0"
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-3 top-[130px] px-[20%] lg:px-[8%]  md:px-[10%] w-full gap-[56px]">
+        <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
           <div className="flex justify-center gap-2 ">
             <p className="text-[#484848] text-xs leading-[16px]">Home</p>
             <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
@@ -54,12 +54,8 @@ function WhoWeAre(props) {
             alt=""
             srcSet=""
           />
-          <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className="absolute inset-0 grid items-center justify-center w-full h-full "
-          >
-            <div className=" pl-[5px] t-[150px] md:px-[5%]">
+          <div className="absolute inset-0 grid items-center justify-center w-full h-full ">
+            <div className=" w-full px-4 md:px-6 lg:px-[124px]  t-[150px] ">
               <Typography
                 variant="lead"
                 color="white"

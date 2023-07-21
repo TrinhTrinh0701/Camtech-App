@@ -10,15 +10,15 @@ import { Link } from "react-router-dom";
 
 function ClinicalDiagnostics(props) {
   return (
-    <div className="">
-      <div className="">
+    <div className="w-full">
+      <div className="w-full">
         <img
           src={Whyweare}
           className="w-full h-[256px] object-cover top-0 left-0 right-0"
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-3 top-[130px] w-full px-[20%] lg:px-[9%]  md:px-[10%] gap-[56px]">
+        <div className="flex absolute z-3 top-[130px] w-full px-4 md:px-6 lg:px-[124px]  gap-[56px]">
           <div className="flex justify-center gap-2 ">
             <p className="text-[#484848] text-xs leading-[16px]">Home</p>
             <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
@@ -32,21 +32,17 @@ function ClinicalDiagnostics(props) {
         </div>
       </div>
       <div className="">
-        <div className="relative ">
+        <div className="relative w-full ">
           <img
             src={C3}
             className="w-full h-[600px] object-cover"
             alt=""
             srcSet=""
           />
-          <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className="absolute inset-0 grid items-center justify-center w-full h-full py-14 "
-          >
+          <div className="absolute inset-0 grid items-center justify-center w-full h-full px-4 md:px-6 py-14 ">
             <div className=" pl-[5px] t-[150px]">
               <Typography variant="lead" color="white" className="">
-                <div className="flex flex-col gap-5  w-[500px] md:w-[720px] lg:w-full lg:px-[5%]">
+                <div className="flex flex-col gap-5  w-full lg:px-[5%]">
                   <p className="leading-[42px] text-[28px] font-normal">
                     Enabling point of care testing for Clinical Diagnostics
                   </p>

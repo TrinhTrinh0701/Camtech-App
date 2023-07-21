@@ -40,7 +40,6 @@ const menuItems = [
   },
 ];
 function Header() {
-  const [subMenuVisiable, setSubMenuVisiable] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
   const { pathname } = useLocation();
@@ -52,6 +51,7 @@ function Header() {
   };
 
   const [openMenu, setOpenMenu] = React.useState(false);
+  const [isHome, setIsHome] = React.useState(false);
 
   const triggers = {
     onMouseEnter: () => setOpenMenu(true),
@@ -77,8 +77,8 @@ function Header() {
         <div
           className={
             color
-              ? "header   fixed z-[997] top-0 max-w-[1536px] left-0 right-0 w-full text-[#107AB7] bg-cyan-500 shadow-lg shadow-cyan-500/50 "
-              : "fixed  z-[997] top-0 left-0 right-0 w-full max-w-[1536px] text-white "
+              ? "header fixed z-[997] top-0 left-0 right-0 w-full text-[#107AB7] bg-cyan-500 shadow-lg shadow-cyan-500/50 "
+              : "fixed z-[997] top-0 left-0 right-0 w-full text-white "
           }
         >
           <div className="relative flex gap-[100px] lg:gap-8 justify-center items-center h-full py-[24px] z-10">
@@ -204,14 +204,14 @@ function Header() {
               </div>
               <div
                 className={
-                  !showMenu
-                    ? "bg-[#107AB7] lg:hidden w-[375px] ease-in-out duration-500 flex flex-col gap-[80px] fixed right-0 top-0"
+                  showMenu
+                    ? "bg-[#107AB7] lg:hidden  w-[375px] ease-in-out duration-500 flex flex-col gap-[80px] fixed right-0 top-0"
                     : "fixed right-[-100%]"
                 }
               >
                 <div className="flex text-white flex-col lg:hidden  gap-4 px-[24px] ">
-                  <div onClick={() => setShowMenu(true)} className="">
-                    <CloseOutlined className="flex justify-end p-4 mb-2 cursor-pointer"></CloseOutlined>
+                  <div onClick={() => setShowMenu(false)} className="">
+                    <CloseOutlined className="flex justify-end py-4 mb-2 cursor-pointer px-14"></CloseOutlined>
                   </div>
 
                   <div className="leading-[48px] text-[40px] font-normal">
@@ -275,6 +275,16 @@ function Header() {
                       }`}
                     >
                       Technology
+                    </Link>
+                  </div>
+                  <div className="leading-[48px] text-[40px] font-normal">
+                    <Link
+                      to="/contact"
+                      className={`${styles.link} ${
+                        pathname === "/contact" ? " font-extrabold " : ""
+                      }`}
+                    >
+                      ContactUs
                     </Link>
                   </div>
                 </div>

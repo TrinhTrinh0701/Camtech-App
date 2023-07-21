@@ -37,7 +37,7 @@ export default function BioDefense() {
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-3 top-[130px] w-full px-[20%] lg:px-[9%]  md:px-[10%] gap-[56px]">
+        <div className="flex absolute z-3 top-[130px] w-full px-4 md:px-6 lg:px-[124px] gap-[56px]">
           <div className="flex justify-center gap-2 ">
             <p className="text-[#484848] text-xs leading-[16px]">Home</p>
             <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
