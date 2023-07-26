@@ -77,7 +77,7 @@ function Header() {
           }
         >
           <div className="relative flex gap-[150px] lg:gap-8 justify-center  items-center h-full py-[24px] z-10">
-            <div className="lg:pr-[300px]">
+            <div className="lg:pr-[200px]">
               {color || !isHome ? (
                 <img
                   src={Logo}

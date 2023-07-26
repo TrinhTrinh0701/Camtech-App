@@ -22,7 +22,7 @@ import "./styles.css";
 
 function Home() {
   return (
-    <div className="flex-col w-full h-full gap-14">
+    <div className="flex-col min-w-[560px] h-full gap-14">
       <div className="relative w-full ">
         <Carousel className="text-[32px] lg:w-full font-normal leading-[64px] md:text-[40px] md:leading-[64px]">
           <div className="relative w-full h-[720px]">
