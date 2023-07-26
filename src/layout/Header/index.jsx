@@ -1,44 +1,25 @@
+import {
+  CaretDownOutlined,
+  CloseOutlined,
+  MenuOutlined,
+  RightOutlined,
+} from "@ant-design/icons";
+import { Button, Menu, MenuHandler, MenuList } from "@material-tailwind/react";
+import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import {
-  RightOutlined,
-  CaretDownOutlined,
-  MenuOutlined,
-  CloseOutlined,
-} from "@ant-design/icons";
-import {
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Button,
-  Card,
-  Typography,
-} from "@material-tailwind/react";
-import { AnimatePresence, motion } from "framer-motion";
+import LogoWhite from "../../asset/img/Logo/Logo white.png";
+import Logo from "../../asset/img/Logo/Logo.png";
 import FB from "../../asset/img/facebook.png";
 import IG from "../../asset/img/instagram.png";
 import LK from "../../asset/img/linkedin.png";
 import YT from "../../asset/img/youtube.png";
-import Logo from "../../asset/img/Logo/Logo.png";
-import LogoWhite from "../../asset/img/Logo/Logo white.png";
 import "./styles.css";
-import menuManage from "../../utils/Common/menuManage";
 const styles = {
   link: "cursor-pointer",
   color: "text-black",
 };
-const menuItems = [
-  {
-    title: "Clinical Diagnostics",
-  },
-  {
-    title: "Food Safety",
-  },
-  {
-    title: "Biodefense",
-  },
-];
+
 function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const navigate = useNavigate();
@@ -61,10 +42,7 @@ function Header() {
     onMouseEnter: () => setOpenMenu(true),
     onMouseLeave: () => setOpenMenu(false),
   };
-  const [text, setText] = useState({
-    1: "/whoweare",
-    2: "product",
-  });
+
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -94,11 +72,11 @@ function Header() {
           style={getHeaderStyle()}
           className={
             color
-              ? "header fixed z-[997] top-0 left-0 right-0 w-full bg-cyan-500 shadow-lg shadow-cyan-500/50 "
+              ? " fixed z-[997] top-0 left-0 right-0 w-full bg-cyan-500 shadow-lg shadow-cyan-500/50 "
               : "fixed z-[997] top-0 left-0 right-0 w-full "
           }
         >
-          <div className="relative flex gap-[100px] lg:gap-8 justify-center items-center h-full py-[24px] z-10">
+          <div className="relative flex gap-[150px] lg:gap-8 justify-center  items-center h-full py-[24px] z-10">
             <div className="lg:pr-[300px]">
               {color || !isHome ? (
                 <img

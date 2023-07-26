@@ -5,7 +5,7 @@ import React from "react";
 
 function Layout() {
   return (
-    <div className="flex flex-col justify-between w-full h-full min-h-screen">
+    <div className="w-full h-full">
       <Header></Header>
       <Content></Content>
       <Footer></Footer>

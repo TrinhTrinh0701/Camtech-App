@@ -1,31 +1,30 @@
-import React, { useState } from "react";
-import Whyweare from "../../asset/img/why.png";
-import Slider from "../../asset/img/slider.png";
-import OurStory from "../../asset/img/our story.png";
+import { RightOutlined } from "@ant-design/icons";
+import { Typography } from "@material-tailwind/react";
+import React from "react";
+import { Link } from "react-router-dom";
+import Nus from "../../asset/img/Our/Nus.png";
+import A from "../../asset/img/Our/a.png";
+import Enterprise from "../../asset/img/Our/enter.png";
+import Ucl from "../../asset/img/Our/ucl.png";
+import University from "../../asset/img/Our/univer.png";
+import Gar from "../../asset/img/Trusted By/gar.png";
+import MusimMas from "../../asset/img/Trusted By/musim mas.png";
+import Nestle from "../../asset/img/Trusted By/nestle.png";
+import SimeDarby from "../../asset/img/Trusted By/sime darby.png";
+import Winlmar from "../../asset/img/Trusted By/winlmar.png";
 import Avatar from "../../asset/img/avatar.png";
 import Avatar2 from "../../asset/img/avatar2.png";
 import Avatar3 from "../../asset/img/avatar3.png";
 import Avatar4 from "../../asset/img/avatar4.png";
 import Avatar5 from "../../asset/img/avatar5.png";
-import Our from "../../asset/img/our.png";
-import A from "../../asset/img/Our/a.png";
-import Enterprise from "../../asset/img/Our/enter.png";
-import Nus from "../../asset/img/Our/Nus.png";
-import Ucl from "../../asset/img/Our/ucl.png";
-import University from "../../asset/img/Our/univer.png";
-import Gar from "../../asset/img/Trusted By/gar.png";
-import Nestle from "../../asset/img/Trusted By/nestle.png";
-import Winlmar from "../../asset/img/Trusted By/winlmar.png";
-import SimeDarby from "../../asset/img/Trusted By/sime darby.png";
-import MusimMas from "../../asset/img/Trusted By/musim mas.png";
-import { RightOutlined } from "@ant-design/icons";
 import C1 from "../../asset/img/carousel.png";
-import { Typography } from "@material-tailwind/react";
-import { Link } from "react-router-dom";
+import OurStory from "../../asset/img/our story.png";
+import Our from "../../asset/img/our.png";
+import Whyweare from "../../asset/img/why.png";
 
 function WhoWeAre() {
   return (
-    <div className="w-full">
+    <div className="min-w-[560px]">
       <div className="w-full">
         <img
           src={Whyweare}
@@ -59,7 +58,7 @@ function WhoWeAre() {
               <Typography
                 variant="lead"
                 color="white"
-                className="leading-[64px] text-[40px] font-normal  p-5 "
+                className="text-[32px]  font-normal leading-[48px] md:text-[40px] md:leading-[64px] p-5 "
               >
                 We aim to
                 <Link to="/product">
@@ -72,23 +71,21 @@ function WhoWeAre() {
             </div>
           </div>
         </div>
-        <div
-          data-aos="fade-up"
-          data-aos-duration="3000"
-          className="grid grid-cols-1 gap-6 lg:pb-2 md:flex md:justify-center md:items-center md:gap-10 "
-        >
-          <div className=" flex flex-col md:flex md:flex-row gap-14 justify-center items-center lg:flex lg:gap-[122px]">
-            <div className="lg:flex-col lg:flex lg:gap-[34px] flex flex-col gap-4 ">
+        <div className="grid grid-cols-1 gap-6 lg:pb-2 md:flex md:gap-10 ">
+          <div className=" flex flex-col w-full md:flex md:flex-row gap-14 px-4 md:gap-6 lg:px-[124px]  md:px-6 lg:flex lg:gap-[122px]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="lg:flex-col lg:flex w-full lg:gap-[34px] flex flex-col gap-4 "
+            >
               <div className="flex flex-col gap-4 font-normal">
-                <p className="pr-[200px] text-[#107AB7] leading-[42px] text-[28px]">
+                <p className=" text-[#107AB7] leading-[42px] text-[28px]">
                   Our Vision
                 </p>
                 <p className="text-[#484848] text-base leading-[26px]">
-                  Providing Novel Lab-based and Point-of-Care <br />
-                  diagnostic tests and actionable insights from <br />
-                  real-time data to customers all the time,
-                  <br />
-                  anywhere.
+                  Providing Novel Lab-based and Point-of-Care diagnostic tests
+                  and actionable insights from real-time data to customers all
+                  the time, anywhere.
                 </p>
               </div>
 
@@ -97,15 +94,13 @@ function WhoWeAre() {
                   What We Do
                 </p>
                 <p className="text-[#484848] text-base leading-[26px]">
-                  Our detection platforms provide the basis for <br />
-                  reliability, customisation and scalability in <br />
-                  delivering rapid testing solutions. <br /> <br /> Based on
-                  these platforms, we have developed <br /> and commercialised a
-                  range of testing solutions <br /> for biodefence, food safety
-                  and clinical <br /> diagnostics applications, that aim to
-                  disrupt
-                  <br />
-                  current lab-based testing approaches.
+                  Our detection platforms provide the basis for reliability,
+                  customisation and scalability in delivering rapid testing
+                  solutions. <br /> <br /> Based on these platforms, we have
+                  developed <br /> and commercialised a range of testing
+                  solutions for biodefence, food safety and clinical diagnostics
+                  applications, that aim to disrupt current lab-based testing
+                  approaches.
                 </p>
               </div>
               <div className="flex flex-col gap-4 font-normal">
@@ -113,33 +108,37 @@ function WhoWeAre() {
                   Our Story
                 </p>
                 <p className="text-[#484848] text-base leading-[26px]">
-                  Founded in 2013, Camtech Diagnostics has built <br />
-                  significant R&D and Manufacturing capabilities to <br />
-                  support these developments as an integrated <br />
-                  diagnostics provider.
+                  Founded in 2013, Camtech Diagnostics has built significant R&D
+                  and Manufacturing capabilities to support these developments
+                  as an integrated diagnostics provider.
                   <br /> <br />
-                  Our continual and long-term investment in
-                  <br /> innovation allows us to meet rapidly evolving
-                  <br />
-                  market requirements and provide best in class
-                  <br />
-                  solutions.
+                  Our continual and long-term investment in innovation allows us
+                  to meet rapidly evolving market requirements and provide best
+                  in class solutions.
                 </p>
               </div>
             </div>
-            <div className="lg:flex gap-12 flex flex-col lg:flex-col lg:gap-[150px] justify-center items-center">
-              <div data-aos="fade-left" data-aos-duration="500" className="">
+            <div className="lg:flex gap-12  flex flex-col lg:flex-col lg:gap-[150px] ">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="500"
+                className="w-full"
+              >
                 <img
                   src={Our}
-                  className="lg:w-[550px] lg:h-[400px] w-[343px]"
+                  className="w-full h-full md:w-[550px] lg:w-[564px]"
                   alt=""
                   srcSet=""
                 />
               </div>
-              <div data-aos="fade-left" data-aos-duration="500" className="">
+              <div
+                data-aos="fade-left"
+                data-aos-duration="500"
+                className="w-full"
+              >
                 <img
                   src={OurStory}
-                  className="lg:w-[550px] lg:h-[250px] w-[343px]"
+                  className="w-full h-full md:w-[550px] "
                   alt=""
                   srcSet=""
                 />
@@ -148,20 +147,16 @@ function WhoWeAre() {
           </div>
         </div>
 
-        <div className="flex-col flex justify-center items-center gap-8 lg:flex lg:flex-row lg:gap-[150px] lg:items-center lg:justify-center">
+        <div className="flex-col flex w-full md:px-6 px-4 gap-8 lg:flex lg:flex-row lg:gap-[150px] lg:px-[124px]">
           <p
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="flex justify-center items-center md:pr-[550px] lg:pr-0 pr-[180px] font-normal text-[#107AB7] leading-[42px] text-[28px]"
+            className="flex  font-normal text-[#107AB7] leading-[42px] text-[28px]"
           >
             Our Partners
           </p>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className="flex-col flex justify-center items-center gap-6 md:px-[80px] md:flex md:flex-row lg:px-0 lg:gap-16 "
-          >
-            <div className="flex py-[6px] gap-[36px]">
+          <div className="flex flex-col gap-6 md:flex md:flex-row lg:gap-16 ">
+            <div className="flex py-[6px] gap-[100px]">
               <img
                 data-aos="fade-left"
                 data-aos-duration="500"
@@ -187,7 +182,7 @@ function WhoWeAre() {
                 srcSet=""
               />
             </div>
-            <div className="flex py-[5px] gap-[30px]">
+            <div className="flex py-[5px] gap-[100px]">
               <img
                 data-aos="fade-left"
                 data-aos-duration="500"
@@ -207,11 +202,11 @@ function WhoWeAre() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F7F7F9] items-center justify-center flex flex-col pb-[80px] gap-14">
+        <div className="bg-[#F7F7F9] px-4 md:px-6 lg:px-[124px] flex flex-col pb-[80px] gap-14">
           <p
             data-aos="fade-up"
             data-aos-duration="3000"
-            className=" md:pr-[500px] lg:pr-[820px] pr-[150px] mt-14 font-normal text-[#107AB7] leading-[42px] text-[28px]"
+            className=" mt-14 font-normal text-[#107AB7] leading-[42px] text-[28px]"
           >
             Team Members
           </p>
@@ -219,19 +214,19 @@ function WhoWeAre() {
             <div
               data-aos="fade-up"
               data-aos-duration="3000"
-              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+              className="grid grid-cols-1 gap-6 md:flex lg:gap-10"
             >
               <img
                 data-aos="zoom-out-up"
                 data-aos-duration="500"
                 src={Avatar}
-                className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
+                className="object-cover md:w-[196px] md:h-[196px]"
                 alt=""
                 srcSet=""
               />
-              <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="">
-                  <p className="pr-[170px] lg:pr-[650px] md:pr-[330px] text-[#107AB7] leading-[32px] font-bold text-xl">
+                  <p className=" text-[#107AB7] leading-[32px] font-bold text-xl">
                     Dr Meng Han Kuok
                   </p>
                   <p className="text-[#767676] text-base leading-[26px] font-normal ">
@@ -239,7 +234,7 @@ function WhoWeAre() {
                   </p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <p className="text-[#767676] text-base w-[343px] md:w-[520px] lg:w-[850px] leading-[26px] font-normal ">
+                  <p className="text-[#767676] text-base w-full  leading-[26px] font-normal ">
                     He obtained a BA and Masters inEngineering (Cantab) and
                     worked in manufacturing industry, investment banking and
                     management consulting before completing his PhD in
@@ -256,19 +251,19 @@ function WhoWeAre() {
             <div
               data-aos="fade-up"
               data-aos-duration="3000"
-              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+              className="grid grid-cols-1 gap-6 md:flex lg:gap-10"
             >
               <img
                 data-aos="zoom-out-up"
                 data-aos-duration="500"
                 src={Avatar2}
-                className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
+                className="object-cover md:w-[196px] md:h-[196px] "
                 alt=""
                 srcSet=""
               />
-              <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="">
-                  <p className=" md:pr-[350px] lg:pr-[680px] pr-[180px] text-[#107AB7] leading-[32px] font-bold text-xl">
+                  <p className="  text-[#107AB7] leading-[32px] font-bold text-xl">
                     Dr Deny Hartono
                   </p>
                   <p className="text-[#767676] text-base leading-[26px] font-normal ">
@@ -276,7 +271,7 @@ function WhoWeAre() {
                   </p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <p className="text-[#767676] text-base w-[343px] md:w-[520px] lg:w-[850px] leading-[26px] font-normal ">
+                  <p className="text-[#767676] text-base w-full  leading-[26px] font-normal ">
                     B.Eng. (First Class Honours) in Chemical Engineering from
                     the Institut Teknologi Bandung and Ph.D. in Chemical and
                     Biomolecular Engineering from the National University of
@@ -293,19 +288,19 @@ function WhoWeAre() {
             <div
               data-aos="fade-up"
               data-aos-duration="3000"
-              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+              className="grid grid-cols-1 gap-6 md:flex lg:gap-10"
             >
               <img
                 data-aos="zoom-out-up"
                 data-aos-duration="500"
                 src={Avatar3}
-                className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
+                className="object-cover md:w-[196px] md:h-[196px] "
                 alt=""
                 srcSet=""
               />
-              <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="">
-                  <p className="md:pr-[350px] lg:pr-[700px] pr-[180px] text-[#107AB7] leading-[32px] font-bold text-xl">
+                  <p className=" text-[#107AB7] leading-[32px] font-bold text-xl">
                     Dr Daniel Kirilly
                   </p>
                   <p className="text-[#767676] text-base leading-[26px] font-normal ">
@@ -313,7 +308,7 @@ function WhoWeAre() {
                   </p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <p className="text-[#767676] text-base w-[343px] md:w-[520px] lg:w-[850px] leading-[26px] font-normal ">
+                  <p className="text-[#767676] text-base w-full leading-[26px] font-normal ">
                     Daniel earned his PhD at University of Kansas Medical Center
                     in the U.S. focusing on stem cell biology. He continued his
                     work on cell and neurobiology in Singapore at the Temasek
@@ -330,19 +325,19 @@ function WhoWeAre() {
             <div
               data-aos="fade-up"
               data-aos-duration="3000"
-              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+              className="grid grid-cols-1 gap-6 md:flex lg:gap-10"
             >
               <img
                 data-aos="zoom-out-up"
                 data-aos-duration="500"
                 src={Avatar4}
-                className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
+                className="object-cover  md:w-[196px] md:h-[196px]"
                 alt=""
                 srcSet=""
               />
-              <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="">
-                  <p className="md:pr-[400px] lg:pr-[730px] pr-[230px] text-[#107AB7] leading-[32px] font-bold text-xl">
+                  <p className=" text-[#107AB7] leading-[32px] font-bold text-xl">
                     Dr Ana Zeng
                   </p>
                   <p className="text-[#767676] text-base leading-[26px] font-normal ">
@@ -350,7 +345,7 @@ function WhoWeAre() {
                   </p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <p className="text-[#767676] text-base w-[343px] md:w-[520px] lg:w-[850px] leading-[26px] font-normal ">
+                  <p className="text-[#767676] text-base w-full  leading-[26px] font-normal ">
                     PhD in Molecular Microbiology from the Key Laboratory of
                     Synthetic Biology, Chinese Academy of Sciences. She has 12
                     years work experiences on R&D, Product Development and
@@ -366,19 +361,19 @@ function WhoWeAre() {
             <div
               data-aos="fade-up"
               data-aos-duration="3000"
-              className="grid grid-cols-1 gap-6 md:flex md:justify-center lg:gap-10"
+              className="grid grid-cols-1 gap-6 md:flex lg:gap-10"
             >
               <img
                 data-aos="zoom-out-up"
                 data-aos-duration="500"
                 src={Avatar5}
-                className="object-cover px-6 pr-[230px] md:pr-0 md:h-full md:w-full"
+                className="object-cover md:w-[196px] md:h-[196px] "
                 alt=""
                 srcSet=""
               />
-              <div className="flex flex-col items-center justify-center gap-4">
+              <div className="flex flex-col gap-4">
                 <div className="">
-                  <p className="md:pr-[400px] lg:pr-[730px] pr-[230px] text-[#107AB7] leading-[32px] font-bold text-xl">
+                  <p className=" text-[#107AB7] leading-[32px] font-bold text-xl">
                     Terence Oh
                   </p>
                   <p className="text-[#767676] text-base leading-[26px] font-normal ">
@@ -386,7 +381,7 @@ function WhoWeAre() {
                   </p>
                 </div>
                 <div className="flex items-center justify-center">
-                  <p className="text-[#767676] text-base w-[343px] md:w-[520px] lg:w-[850px] leading-[26px] font-normal ">
+                  <p className="text-[#767676] text-base w-full  leading-[26px] font-normal ">
                     Bachelor in Engineering (Hons) from University of Aberdeen
                     and MBA in International Management from Monash University.
                     Terence started his career as an M&E Engineer at SquireMech,
@@ -405,21 +400,17 @@ function WhoWeAre() {
             </div>
           </div>
         </div>
-        <div className="flex-col justify-center items-center flex gap-8 lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[200px]">
+        <div className="flex-col px-4 md:px-6 flex gap-8 lg:flex lg:flex-row lg:items-center lg:justify-center lg:gap-[200px]">
           <p
             data-aos="fade-up"
             data-aos-duration="3000"
-            className=" md:pr-[580px] lg:pr-0 pr-[230px] text-[#107AB7] leading-[42px] font-normal text-[28px] "
+            className=" text-[#107AB7] leading-[42px] font-normal text-[28px] "
           >
             Trusted By
           </p>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className="flex items-center justify-center"
-          >
-            <div className="flex-col flex items-center justify-center gap-[32px] md:flex md:flex-row lg:gap-[60px] ">
-              <div className="flex gap-[56px]">
+          <div data-aos="fade-up" data-aos-duration="3000" className="flex ">
+            <div className="flex-col flex gap-[32px] md:flex md:flex-row lg:gap-[60px] ">
+              <div className="flex gap-[100px]">
                 <img
                   data-aos="fade-left"
                   data-aos-duration="500"
@@ -445,7 +436,7 @@ function WhoWeAre() {
                   className=" w-[76px] h-[76px] object-contain "
                 />
               </div>
-              <div className="flex gap-14">
+              <div className="flex gap-[100px]">
                 <img
                   data-aos="fade-left"
                   data-aos-duration="500"

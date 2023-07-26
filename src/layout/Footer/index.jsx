@@ -13,13 +13,13 @@ function Footer() {
     navigate("/");
   };
   return (
-    <div className="mt-[56px] h-full w-full">
-      <div className="flex flex-col items-center justify-center lg:flex lg:items-center lg:justify-center md:flex md:flex-row md:px-[50px] md:gap-[100px]  bg-[#C6EAFE] py-[56px]">
-        <div className=" font-light text-center w-[340px] md:w-[500px] text-[40px] leading-[48px] h-full">
+    <div className="mt-[56px] min-w-[560px]">
+      <div className="flex flex-col gap-4 items-center justify-center lg:flex lg:items-center lg:justify-center md:flex md:flex-row md:px-[50px] md:gap-[100px]  bg-[#C6EAFE] py-[56px]">
+        <div className=" font-light text-center  text-[40px] leading-[48px] h-full">
           Ready to connect with us?
         </div>
         <div
-          className="hover:bg-blue-900 w-[343px] md:w-[165px] items-center justify-center border-white border-2 
+          className="hover:bg-blue-900 w-[343px] md:w-[165px] items-center justify-center border-white border-2
         flex h-full gap-1 py-[12px] text-white rounded-md bg-[#107AB7]"
         >
           <Link to="/contact">

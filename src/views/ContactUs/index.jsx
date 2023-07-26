@@ -1,14 +1,14 @@
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+// import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 import MyPage from "./MyPage";
 
 function ContactUs() {
-  const key = process.env.REACT_APP_RECAPTCHA_SITE_KEY ?? "";
+  // const key = process.env.REACT_APP_RECAPTCHA_SITE_KEY ?? "";
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey={key}>
-      <MyPage />
-    </GoogleReCaptchaProvider>
+    // <GoogleReCaptchaProvider reCaptchaKey={key}>
+    <MyPage />
+    // </GoogleReCaptchaProvider>
   );
 }
 

@@ -10,15 +10,15 @@ import { Link } from "react-router-dom";
 
 function ClinicalDiagnostics(props) {
   return (
-    <div className="w-full">
+    <div className="min-w-[560px]">
       <div className="w-full">
         <img
           src={Whyweare}
-          className="w-full h-[256px] object-cover top-0 left-0 right-0"
+          className="w-full h-[280px] object-cover top-0 left-0 right-0"
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-3 top-[130px] w-full px-4 md:px-6 lg:px-[124px]  gap-[56px]">
+        <div className="flex absolute bottom-14 z-3 top-[130px] w-full px-4 md:px-6 lg:px-[124px]  gap-[56px]">
           <div className="flex justify-center gap-2 ">
             <p className="text-[#484848] text-xs leading-[16px]">Home</p>
             <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
@@ -26,7 +26,7 @@ function ClinicalDiagnostics(props) {
               Clinical Diagnostics
             </p>
           </div>
-          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
+          <p className="text-[40px] absolute pb-14 pt-8 leading-[48px] text-[#107AB7] font-extrabold">
             CILINICAL DIAGNOSTICS
           </p>
         </div>
@@ -39,7 +39,7 @@ function ClinicalDiagnostics(props) {
             alt=""
             srcSet=""
           />
-          <div className="absolute inset-0 grid items-center justify-center w-full h-full px-4 md:px-6 py-14 ">
+          <div className="absolute inset-0 grid items-center justify-center w-full h-full lg:px-[124px] px-4 md:px-6 py-14 ">
             <div className=" pl-[5px] t-[150px]">
               <Typography variant="lead" color="white" className="">
                 <div className="flex flex-col gap-5  w-full lg:px-[5%]">
@@ -82,17 +82,17 @@ function ClinicalDiagnostics(props) {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col items-center justify-center gap-6 py-14 md:flex md:flex-row md:justify-center lg:flex lg:gap-[124px] "
+          className="flex flex-col gap-6 px-4 md:flex-row-reverse lg:gap-[124px] lg:px-[124px] md:px-6 py-14 md:flex lg:flex "
         >
           <img
             data-aos="fade-left"
             data-aos-duration="500"
             src={CD1}
-            className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
+            className="w-full h-[235px] object-cover lg:w-[564px] lg:h-[379px]"
             alt=""
             srcSet=""
           />
-          <div className="flex flex-col gap-6 w-[373px] lg:w-[494px]">
+          <div className="flex flex-col gap-6 w-full lg:w-[494px]">
             <p className="text-[#107AB7] leading-[42px] text-[28px]">
               COVID-19 Gold Colloidal Rapid Antigen Test Kit
             </p>
@@ -133,19 +133,21 @@ function ClinicalDiagnostics(props) {
         <p
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="text-[#107AB7] leading-[42px] text-[28px] pb-6 mx-[25%] md:mx-6 lg:mx-[124px] "
+          className="text-[#107AB7] leading-[42px] text-[28px] pb-6 px-4 md:px-6 lg:px-[124px] "
         >
           Other COVID-19 Products
         </p>
-        <div className="grid grid-cols-1 gap-6 w-[373px] mx-[25%] pb-14 md:mx-6 md:grid md:grid-cols-2 md:gap-6 md:w-[800px] lg:w-full lg:flex lg:gap-6 lg:items-center lg:justify-center ">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            className="flex flex-col gap-6 md:w-[300px]  lg:w-[320px]"
-          >
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="grid w-full grid-cols-1 gap-6 md:px-6 pb-14 md:grid md:grid-cols-2 md:gap-6 lg:w-full lg:flex lg:gap-6 lg:px-[124px] "
+        >
+          <div className="flex flex-col gap-6 lg:w-[320px]">
             <img
+              data-aos="zoom-out-up"
+              data-aos-duration="500"
               src={T1}
-              className="w-[380px] h-[235px] object-cover"
+              className="w-full h-[235px] object-cover"
               alt=""
               srcSet=""
             />
@@ -161,11 +163,11 @@ function ClinicalDiagnostics(props) {
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]"
+            className="flex flex-col w-full gap-6 lg:w-[320px]"
           >
             <img
               src={T1}
-              className="w-[380px] h-[235px] object-cover"
+              className="w-full h-[235px] object-cover"
               alt=""
               srcSet=""
             />
@@ -181,11 +183,11 @@ function ClinicalDiagnostics(props) {
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]"
+            className="flex flex-col w-full gap-6 lg:w-[320px]"
           >
             <img
               src={T1}
-              className="w-[380px] h-[235px] object-cover"
+              className="w-full h-[235px] object-cover"
               alt=""
               srcSet=""
             />
@@ -201,11 +203,11 @@ function ClinicalDiagnostics(props) {
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="flex flex-col gap-6 md:w-[300px] lg:w-[320px]"
+            className="flex flex-col w-full gap-6 lg:w-[320px]"
           >
             <img
               src={T1}
-              className="w-[380px] h-[235px] object-cover"
+              className="w-full h-[235px] object-cover"
               alt=""
               srcSet=""
             />
@@ -222,9 +224,9 @@ function ClinicalDiagnostics(props) {
         <div
           data-aos="fade-up"
           data-aos-duration="500"
-          className="flex items-center justify-center cursor-pointer"
+          className="flex items-center justify-center px-4 cursor-pointer"
         >
-          <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-base rounded-md w-[343px] py-3 px-6 border border-[#107AB7]">
+          <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-base rounded-md w-full  py-3 px-4 border border-[#107AB7]">
             Visit Website
           </button>
         </div>

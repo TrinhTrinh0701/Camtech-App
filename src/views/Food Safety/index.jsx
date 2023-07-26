@@ -12,7 +12,7 @@ import C3 from "../../asset/img/carousel3.png";
 
 function FoodSafety(props) {
   return (
-    <div>
+    <div className="min-w-[560px]">
       <div className="">
         <img
           src={Whyweare}
@@ -28,7 +28,7 @@ function FoodSafety(props) {
               Food Safety
             </p>
           </div>
-          <p className="text-[40px] absolute px-4  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
+          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
             FOOD SAFETY
           </p>
         </div>
@@ -58,13 +58,13 @@ function FoodSafety(props) {
                       to produce solutions that truly meet their needs.
                     </span>
                   </Link>
-                  <p className="leading-[32px] text-xl font-normal">
+                  <p className="leading-[26px] text-base font-normal">
                     We have developed a broad range of food safety solutions and
                     are capable of addressing newly emergent requirements
                     through targeted R&D and our strong links with research and
                     industry partners.
                   </p>
-                  <p className="leading-[32px] text-xl font-normal">
+                  <p className="leading-[26px] text-base font-normal">
                     We aim to enable full traceability from end to end, by
                     deploying the best technology for rapid detection of
                     contaminants, toxins, pathogens at key points of the food
@@ -79,17 +79,17 @@ function FoodSafety(props) {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col justify-center items-center gap-6 py-14  md:flex-row md:flex md:justify-center md:items-center md:gap-6 lg:gap-[124px] "
+          className="flex flex-col px-4 lg:px-[124px] gap-6 py-14 md:px-6 md:flex-row-reverse md:flex  md:gap-6 lg:gap-[124px] "
         >
           <img
             data-aos="fade-left"
             data-aos-duration="500"
             src={FS2}
-            className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
+            className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
             srcSet=""
           />
-          <div className="flex flex-col gap-6 w-[373px] lg:w-[494px]">
+          <div className="flex flex-col gap-6 w-full lg:w-[494px]">
             <p className="text-[#107AB7] leading-[42px] text-[28px]">
               3-MCPD and Glycidol Rapid Quantification Kit
             </p>
@@ -135,7 +135,7 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-[#107AB7] md:w-[348px] leading-[24px] hover:bg-blue-gray-50 font-bold text-base rounded-md w-[343px] py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] md:w-[348px] leading-[24px] hover:bg-blue-gray-50 font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 Visit 3-MCPD Website
               </button>
             </Link>
@@ -144,17 +144,17 @@ function FoodSafety(props) {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col justify-center items-center gap-6 py-14  md:flex-row  md:flex md:justify-center md:gap-6 md:bg-[#F7F7F9] lg:gap-[124px] lg:flex-row-reverse "
+          className="flex flex-col px-4  md:px-6  gap-6 py-14  md:flex-row  md:flex md:gap-6 md:bg-[#F7F7F9] lg:gap-[124px] lg:px-[124px] "
         >
           <img
             data-aos="fade-left"
             data-aos-duration="500"
             src={FS3}
-            className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
+            className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
             srcSet=""
           />
-          <div className="flex flex-col gap-6 w-[373px] lg:w-[494px]">
+          <div className="flex flex-col gap-6 w-full lg:w-[494px]">
             <p className="text-[#107AB7] leading-[42px] text-[28px]">
               Mycotoxin Quantitative Rapid test
             </p>
@@ -200,12 +200,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white hover:bg-teal-700 font-bold leading-[24px] text-base bg-[#09D3C2] rounded-md py-3 px-6 w-[343px] cursor-pointer">
+              <button className="text-white hover:bg-teal-700 font-bold leading-[24px] text-base bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-[343px] py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>
@@ -214,17 +214,17 @@ function FoodSafety(props) {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col justify-center items-center gap-6 py-14  md:flex-row md:flex md:justify-center lg:gap-[124px] "
+          className="flex flex-col px-4  gap-6 py-14   md:flex md:px-6 md:flex-row-reverse lg:px-[124px] lg:gap-[124px] "
         >
           <img
             data-aos="fade-left"
             data-aos-duration="500"
             src={FS4}
-            className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
+            className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
             srcSet=""
           />
-          <div className="flex flex-col gap-6 w-[373px] lg:w-[494px]">
+          <div className="flex flex-col gap-6 w-full lg:w-[494px]">
             <p className="text-[#107AB7] leading-[42px] text-[28px]">
               BluLine Portable Fecal Detector
             </p>
@@ -267,12 +267,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 px-6 w-[343px] cursor-pointer">
+              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-[343px] py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>
@@ -281,17 +281,17 @@ function FoodSafety(props) {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col justify-center items-center md:bg-[#F7F7F9] gap-6 py-14  md:flex-row  md:flex md:justify-center lg:flex lg:gap-[124px] lg:flex-row-reverse "
+          className="flex flex-col px-4 md:px-6 md:bg-[#F7F7F9] gap-6 py-14  md:flex-row  md:flex  lg:flex lg:gap-[124px] lg:px-[124px] "
         >
           <img
             data-aos="fade-left"
             data-aos-duration="500"
             src={FS5}
-            className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
+            className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
             srcSet=""
           />
-          <div className="flex flex-col gap-6 w-[373px] lg:w-[494px]">
+          <div className="flex flex-col gap-6 w-full lg:w-[494px]">
             <p className="text-[#107AB7] leading-[42px] text-[28px]">
               Qualitative Rapid Test Kits for Food Safety
             </p>
@@ -310,12 +310,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 px-6 w-[343px] cursor-pointer">
+              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-[343px] py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>
@@ -324,17 +324,17 @@ function FoodSafety(props) {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col justify-center items-center  gap-6 py-14 md:flex-row md:flex md:justify-center lg:flex lg:gap-[124px] "
+          className="flex flex-col px-4 md:px-6  gap-6 py-14 md:flex md:flex-row-reverse lg:flex lg:gap-[124px] "
         >
           <img
             data-aos="fade-left"
             data-aos-duration="500"
             src={FS3}
-            className="w-[380px] h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
+            className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
             srcSet=""
           />
-          <div className="flex flex-col gap-6 w-[373px] lg:w-[494px]">
+          <div className="flex flex-col gap-6 w-full lg:w-[494px]">
             <p className="text-[#107AB7] leading-[42px] text-[28px]">
               ELISA Test Kits for Food Safety
             </p>
@@ -354,12 +354,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 px-6 w-[343px] cursor-pointer">
+              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-[343px] py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>

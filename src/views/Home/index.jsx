@@ -22,9 +22,9 @@ import "./styles.css";
 
 function Home() {
   return (
-    <div className="flex flex-col w-full gap-14">
-      <div className="relative">
-        <Carousel className="">
+    <div className="flex-col w-full h-full gap-14">
+      <div className="relative w-full ">
+        <Carousel className="text-[32px] lg:w-full font-normal leading-[64px] md:text-[40px] md:leading-[64px]">
           <div className="relative w-full h-[720px]">
             <img
               src={C1}
@@ -36,11 +36,11 @@ function Home() {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              <div className=" pl-[5px] t-[150px] md:px-[5%]">
+              <div className=" t-[150px]">
                 <Typography
                   variant="lead"
                   color="white"
-                  className="leading-[64px] text-[40px] font-normal  text-center p-5 "
+                  className="leading-[48px] lg:px-[124px] text-[32px] md:text-[40px] md:leading-[64px] font-normal p-5 "
                 >
                   Our detection platforms cover a wide range of industries with
                   <Link to="/product">
@@ -60,23 +60,23 @@ function Home() {
               className="object-cover w-full h-full"
             />
             <div className="absolute inset-0 grid items-center w-full h-full lg:flex lg:justify-between lg:px-[5%] ">
-              <div className="flex items-center justify-center ">
+              <div className="flex items-center justify-center lg:gap-10">
                 <img
                   src={T1}
                   alt="image 3"
-                  className="object-cover w-[60%] lg:w-[35%] lg:left-[5%] lg:h-[53%] md:left-[20%] left-[100px] shadow-2xl  h-[31%] a absolute rounded-2xl"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[5%] lg:h-[53%] md:left-[17%] left-[50px] shadow-2xl  h-[31%] a absolute rounded-2xl"
                 />
                 <img
                   src={CD1}
                   alt="image 2"
-                  className="object-cover w-[60%] lg:w-[35%] lg:left-[7%] md:left-[23%] lg:h-[50%] left-[120px] shadow-2xl h-[30%] absolute b rounded-2xl"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[7%] md:left-[20%] lg:h-[50%] left-[80px] shadow-2xl h-[30%] absolute b rounded-2xl"
                 />
               </div>
-              <div className="w-full lg:w-[800px]">
+              <div className="w-full lg:w-[750px] md:px-6">
                 <Typography
                   variant="h1"
                   color="white"
-                  className="text-3xl pt-[200px] text-center md:text-2xl lg:text-5xl"
+                  className="text-3xl md:text-[40px] pt-[200px] md:text-2xl lg:text-5xl"
                 >
                   Camtech offers the most advanced Covid-19 point of care rapid
                   testing solutions
@@ -84,7 +84,7 @@ function Home() {
                 <Typography
                   variant="lead"
                   color="white"
-                  className="leading-[48px] text-xl font-normal  text-center p-5"
+                  className="leading-[48px] text-xl  font-normal py-5"
                 >
                   <Link to="/product">
                     <span className="text-[#09D3C2]">
@@ -119,26 +119,26 @@ function Home() {
                 <img
                   src={T1}
                   alt="image 3"
-                  className="object-cover w-[60%] lg:w-[35%] lg:left-[5%] lg:h-[53%] md:left-[20%] left-[100px] shadow-2xl  h-[31%] a absolute rounded-2xl"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[5%] lg:h-[53%] md:left-[20%] left-[50px] shadow-2xl  h-[31%] a absolute rounded-2xl"
                 />
                 <img
                   src={B1}
                   alt="image 2"
-                  className="object-cover w-[60%] lg:w-[35%] lg:left-[7%] md:left-[23%] lg:h-[50%] left-[120px] shadow-2xl h-[30%] absolute b rounded-2xl"
+                  className="object-cover w-[60%] lg:w-[35%] lg:left-[7%] md:left-[23%] lg:h-[50%] left-[80px] shadow-2xl h-[30%] absolute b rounded-2xl"
                 />
               </div>
               <div className="px-[5%] lg:px-0 lg:w-[700px]">
                 <Typography
                   variant="h1"
                   color="white"
-                  className="text-3xl pt-[200px] text-center md:text-2xl lg:text-5xl"
+                  className="text-3xl pt-[200px]  md:text-2xl lg:text-5xl"
                 >
                   World’s first quick test for 3-MCPD & GE in edible oils
                 </Typography>
                 <Typography
                   variant="lead"
                   color="white"
-                  className="leading-[48px] text-xl font-normal  text-center p-5"
+                  className="leading-[48px] text-xl font-normal  py-5"
                 >
                   <Link to="/product">
                     <span className="text-[#09D3C2]">
@@ -169,13 +169,13 @@ function Home() {
       <div
         data-aos="fade-up"
         data-aos-duration="3000"
-        className="flex flex-col gap-[24px] justify-center items-center px-4 md:w-full md:justify-center md:items-center lg:px-[124px]  lg:items-start "
+        className="flex flex-col w-full gap-[24px] px-4 md:px-6 lg:px-[124px] lg:items-start "
       >
-        <p className="text-[#107AB7] font-normal md:pr-[200px] leading-[42px] text-[28px]">
+        <p className="text-[#107AB7]  font-normal leading-[42px] text-[28px]">
           {" "}
           We Offer a Wide-Range of Products
         </p>
-        <p className="text-[#767676] leading-6 font-normal text-base">
+        <p className="text-[#767676]  leading-6 font-normal text-base">
           Camtech's products cover the healthcare, agriculture and security
           industries with matching<br></br>
           products for the current demands. We are focusing on point-of-care
@@ -183,16 +183,16 @@ function Home() {
           the testing capabilities for our partners.
         </p>
       </div>
-      <div className="flex flex-col items-center justify-center px-4 cursor-pointer gap-14 md:grid md:grid-cols-2 md:gap-6 md:px-[100px] lg:flex lg:flex-row lg:gap-10 lg:justify-center lg:items-center">
+      <div className="flex flex-col items-center lg:px-[124px] justify-center w-full px-4 cursor-pointer gap-14 md:grid md:grid-cols-2 md:gap-6 md:px-6 lg:flex lg:flex-row lg:gap-10 ">
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col gap-3"
+          className="flex flex-col w-full gap-3"
         >
           <div data-aos="zoom-out-up" data-aos-duration="3000" className="">
             <img
               src={CD1}
-              className=" w-[368px] h-[247px] object-cover md:w-[343px] lg:w-[400px]  "
+              className=" w-full h-[247px] object-cover  "
               alt=""
               srcSet=""
             />
@@ -212,12 +212,12 @@ function Home() {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col gap-3"
+          className="flex flex-col w-full gap-3"
         >
           <div data-aos="zoom-out-up" data-aos-duration="3000" className="">
             <img
               src={FS1}
-              className=" w-[368px] h-[247px] object-cover md:w-[343px] lg:w-[400px]  "
+              className=" w-full h-[247px] object-cover  "
               alt=""
               srcSet=""
             />
@@ -237,12 +237,12 @@ function Home() {
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="flex flex-col gap-3"
+          className="flex flex-col w-full gap-3"
         >
           <div data-aos="zoom-out-up" data-aos-duration="3000" className="">
             <img
               src={B1}
-              className=" w-[368px] h-[247px] object-cover md:w-[343px] lg:w-[400px] "
+              className=" w-full h-[247px] object-cover  "
               alt=""
               srcSet=""
             />
@@ -262,15 +262,13 @@ function Home() {
       <div
         data-aos="fade-up"
         data-aos-duration="3000"
-        className="flex flex-col justify-center lg:justify-start lg:items-start lg:px-[124px]  items-center font-normal text-[28px] gap-6 px-4 md:px-6 "
+        className="flex flex-col w-full lg:justify-start lg:items-start lg:px-[124px] font-normal text-[28px] gap-6 px-4 md:px-6 "
       >
         <div className="">
-          <p className=" text-[#107AB7] leading-[42px] pr-[200px] md:pr-[450px] lg:pr-0">
-            All Products
-          </p>
+          <p className=" text-[#107AB7] leading-[42px]">All Products</p>
         </div>
-        <div className="grid grid-cols-1 gap-6 md:flex md:gap-6">
-          <div className="flex flex-col gap-3 min-w-[368px]">
+        <div className="grid grid-cols-1 gap-10 md:flex">
+          <div className="flex flex-col gap-3">
             <p className=" text-[#767676] font-normal text-base leading-[26px]">
               COVID-19 Antibody rapid test kit
             </p>
@@ -297,17 +295,17 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-8  lg:flex lg:flex-row lg:py-14 lg:gap-[100px] lg:justify-center lg:items-center">
+      <div className="flex flex-col gap-8 px-4 md:px-6 lg:px-[124px]  lg:flex lg:flex-row lg:py-14 lg:gap-[100px] ">
         <p
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="text-[#107AB7] leading-[42px] font-normal text-[28px] pr-[200px] md:pr-[60%] lg:pr-0"
+          className="text-[#107AB7] leading-[42px] font-normal text-[28px]"
         >
           Trusted By
         </p>
         <div className="">
-          <div className="flex flex-col justify-center items-center gap-8 pb-3 md:flex-row md:flex md:gap-8 lg:gap-[80px]">
-            <div className="flex gap-12 lg:gap-[80px]">
+          <div className="flex flex-col  gap-8 pb-3 md:flex-row md:flex md:gap-8 lg:gap-[80px]">
+            <div className="flex gap-[100px] w-full lg:gap-[80px]">
               <img
                 data-aos="fade-left"
                 data-aos-duration="500"
@@ -333,7 +331,7 @@ function Home() {
                 className=" w-[76px] h-[76px] object-contain  lg:h-[80px] "
               />
             </div>
-            <div className="flex items-center justify-center gap-10 lg:gap-[80px]">
+            <div className="flex w-full gap-[100px] lg:gap-[80px]">
               <img
                 data-aos="fade-left"
                 data-aos-duration="500"
@@ -354,19 +352,18 @@ function Home() {
           </div>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="3000" className="">
-        <img
-          src={Why}
-          alt=""
-          srcSet=""
-          className="object-cover lg:w-full lg:px-[124px] "
-        />
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="px-4 md:px-6 lg:px-[124px]"
+      >
+        <img src={Why} alt="" srcSet="" className="object-cover w-full " />
       </div>
       <div className="flex flex-col gap-8 ">
         <p
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="text-[#107AB7] leading-[42px] px-[20%] md:px-[10%] lg:px-[10%]  pb-[30px] font-normal text-[28px]"
+          className="text-[#107AB7] px-4 md:px-6 lg:px-[124px] leading-[42px] pb-[30px] font-normal text-[28px]"
         >
           Latest News
         </p>
@@ -374,7 +371,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className=" gap-6 w-[343px]  lg:w-[1200px]  md:flex md:gap-6 md:w-[720px] md:justify-center"
+            className=" gap-6 w-full px-4 md:px-6 lg:px-[124px]  md:flex md:gap-6 "
           >
             <img
               data-aos="zoom-out-up"
@@ -382,7 +379,7 @@ function Home() {
               src={LastNew1}
               alt=""
               srcSet=""
-              className=" w-[368px] h-[247px] object-cover lg:w-full lg:h-[300px] "
+              className=" w-full h-[247px] object-cover lg:h-[300px] "
             />
             <div className="flex flex-col gap-4 mt-4 ">
               <div className="flex flex-col gap-2">
@@ -409,7 +406,7 @@ function Home() {
           <div
             data-aos="fade-up"
             data-aos-duration="3000"
-            className="grid grid-cols-1 gap-6 w-[343px] mx-[25%] md:mx-[150px]  lg:w-[1200px] lg:mx-[124px] md:flex md:gap-6 md:w-[720px] "
+            className="grid grid-cols-1 gap-6 w-full px-4 md:px-6 lg:px-[124px] md:flex md:gap-6  "
           >
             <img
               data-aos="zoom-out-up"
@@ -417,7 +414,7 @@ function Home() {
               src={LastNew2}
               alt=""
               srcSet=""
-              className=" w-[368px] h-[247px] object-cover lg:w-[75%] lg:h-[300px] "
+              className=" w-full h-[247px] object-cover lg:h-[300px] lg:w-[900px]   "
             />
             <div className="flex flex-col gap-4 lg:py-6 ">
               <div className="flex flex-col gap-2">

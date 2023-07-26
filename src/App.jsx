@@ -16,7 +16,7 @@ import ContactUs from "./views/ContactUs";
 function App() {
   const location = useLocation();
   return (
-    <div className="raveApp">
+    <div className="CamtechApp">
       <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Layout />}>

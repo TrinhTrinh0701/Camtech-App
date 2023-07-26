@@ -18,7 +18,7 @@ const InputForm = ({
         placeholder={label}
         type={type || "text"}
         id="phone"
-        className="border rounded-md border-blue-gray-200 h-[38px] p-3 w-[348px] md:w-[348px] lg:w-[345px]"
+        className="border rounded-md border-blue-gray-200 h-[56px] p-3 w-full "
         value={value}
         onChange={(e) =>
           setValue((prev) => ({ ...prev, [keyPayload]: e.target.value }))

@@ -42,7 +42,7 @@ function ContactUs(props) {
   };
 
   return (
-    <div className="pb-14">
+    <div className="pb-14 min-w-[560px]">
       <div className="">
         <img
           src={Whyweare}
@@ -63,13 +63,17 @@ function ContactUs(props) {
           </p>
         </div>
       </div>
-      <div className="lg:flex lg:flex-row lg:gap-[522px] flex flex-col md:justify-start md:items-start md:px-6 justify-center items-center lg:justify-center lg:items-center lg:pb-14">
-        <div className="py-[64px] lg:py-0  ">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
+        className="lg:flex lg:flex-row lg:px-[124px] flex flex-col lg:pb-14"
+      >
+        <div className="py-[64px] lg:py-6 px-4 md:px-6  w-full ">
           <p className="leading-[32px] font-bold text-xl text-[#107AB7]">
             SALES ENQUIRIES
           </p>
-          <form className="mt-8 mb-2 w-80 ">
-            <div className="flex flex-col gap-6 mb-4 md:grid md:grid-cols-2 w-[343px] md:w-[720px]">
+          <form className="mt-8 mb-2 ">
+            <div className="flex flex-col gap-6 mb-4 md:grid md:grid-cols-2 w-full md:w-[850px]">
               <InputForm
                 value={payload.firstName}
                 setValue={setPayload}
@@ -113,7 +117,7 @@ function ContactUs(props) {
                   setPayload((prev) => ({ ...prev, industry: e.target.value }))
                 }
                 name="industry"
-                className="border rounded-md text-blue-gray-200  border-blue-gray-200 h-[48px] p-3"
+                className="border rounded-md text-blue-gray-200 w-full  border-blue-gray-200 h-[56px] p-3"
               >
                 <option>Your Industry *</option>
                 <option className="text-black">1</option>
@@ -128,7 +132,7 @@ function ContactUs(props) {
                   }))
                 }
                 name="productorServiceInterest"
-                className="border rounded-md  text-blue-gray-200 md:w-[348px]  border-blue-gray-200 h-[48px] p-3"
+                className="border rounded-md  text-blue-gray-200 w-full  border-blue-gray-200 h-[56px] p-3"
               >
                 <option className="text-blue-gray-200">
                   Product or service interest *
@@ -136,23 +140,23 @@ function ContactUs(props) {
                 <option className="text-black">1</option>
                 <option className="text-black">2</option>
               </select>
-              <div className="md:w-[720px]">
-                <textarea
-                  value={payload.message}
-                  onChange={(e) =>
-                    setPayload((prev) => ({ ...prev, message: e.target.value }))
-                  }
-                  name="message"
-                  id="desc"
-                  placeholder="Your Message *"
-                  className="border rounded-md border-blue-gray-300 p-2  md:w-[720px] h-[156px] w-[343px] placeholder:px-3 placeholder:text-[#00000061] placeholder:py-2"
-                ></textarea>
-                <p className="text-[#484848] text-base font-normal leading-[26px]">
-                  By clicking submit below, you consent to allow Camtech
-                  Diagnostics to store and process the personal information
-                  submitted above to provide you the content requested.
-                </p>
-              </div>
+            </div>
+            <div className="w-full lg:w-[850px] pb-6">
+              <textarea
+                value={payload.message}
+                onChange={(e) =>
+                  setPayload((prev) => ({ ...prev, message: e.target.value }))
+                }
+                name="message"
+                id="desc"
+                placeholder="Your Message *"
+                className="border rounded-md border-blue-gray-300 p-2  h-[156px] w-full placeholder:px-3 placeholder:text-[#00000061] placeholder:py-2"
+              ></textarea>
+              <p className="text-[#484848] text-base font-normal leading-[26px]">
+                By clicking submit below, you consent to allow Camtech
+                Diagnostics to store and process the personal information
+                submitted above to provide you the content requested.
+              </p>
             </div>
 
             <div
@@ -171,15 +175,15 @@ function ContactUs(props) {
             </div>
           </form>
         </div>
-        <div className="flex items-center justify-center lg:hidden">
-          <span className="border-2 border-[#E5E5E5] flex w-[343px] md:w-[720px]"></span>
+        <div className="flex px-4 lg:hidden">
+          <span className="border-2 border-[#E5E5E5] flex w-full md:w-[720px]"></span>
         </div>
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
-          className="py-[64px] mx-[25%] grid grid-cols-1 gap-14 md:mx-[10%] lg:mx-0 lg:py-0 "
+          className="py-[64px] grid grid-cols-1 gap-14 px-4 md:px-6  lg:py-0 "
         >
-          <div className="lg:pt-24">
+          <div className="w-full lg:pt-24">
             <p className="leading-[32px] text-xl font-bold text-[#107AB7]">
               GET IN TOUCH
             </p>
@@ -195,7 +199,7 @@ function ContactUs(props) {
               OUR LOCATIONS
             </p>
             <div className="grid grid-cols-1 gap-8 md:flex md:gap-[60px] md:flex-row-reverse lg:flex lg:flex-col">
-              <div className="px-[10px] lg:px-0">
+              <div className=" lg:px-0">
                 <p className="text-[#107AB7] leading-[26px] text-[24px] font-bold">
                   SINGAPROE
                 </p>
@@ -233,7 +237,7 @@ function ContactUs(props) {
       <div data-aos="fade-up" data-aos-duration="3000" className="">
         <div className="relative">
           <img src={Map} alt="" className="" />
-          <div className="absolute top-28 left-20 z-2">
+          <div className="absolute top-28 lg:top-[270px] lg:left-[9%] left-20 z-2">
             <Tooltip
               placement="top"
               className="px-4 py-3 bg-white border shadow-xl border-blue-gray-50 shadow-black/10"
@@ -265,7 +269,7 @@ function ContactUs(props) {
               />
             </Tooltip>
           </div>
-          <div className="absolute top-[80px] left-[40%] z-2">
+          <div className="absolute top-[80px] left-[40%] lg:top-[190px] lg:left-[43%] z-2">
             <Tooltip
               placement="top"
               className="px-4 py-3 bg-white border shadow-xl border-blue-gray-50 shadow-black/10"
@@ -297,7 +301,7 @@ function ContactUs(props) {
               />
             </Tooltip>
           </div>
-          <div className="absolute top-[55%] left-[70%] z-2">
+          <div className="absolute top-[55%] left-[70%] lg:top-[64%] lg:left-[74.5%] z-2">
             <Tooltip
               placement="top"
               className="px-4 py-3 bg-white border shadow-xl border-blue-gray-50 shadow-black/10"
