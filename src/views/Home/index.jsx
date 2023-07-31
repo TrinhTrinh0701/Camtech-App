@@ -22,9 +22,9 @@ import "./styles.css";
 
 function Home() {
   return (
-    <div className="flex-col min-w-[560px] h-full gap-14">
+    <div className="flex-col w-full h-full gap-14">
       <div className="relative w-full ">
-        <Carousel className="text-[32px] lg:w-full font-normal leading-[64px] md:text-[40px] md:leading-[64px]">
+        <Carousel className="text-[32px] w-full font-normal leading-[64px] md:text-[40px] md:leading-[64px]">
           <div className="relative w-full h-[720px]">
             <img
               src={C1}
@@ -183,13 +183,13 @@ function Home() {
           the testing capabilities for our partners.
         </p>
       </div>
-      <div className="flex flex-col items-center lg:px-[124px] justify-center w-full px-4 cursor-pointer gap-14 md:grid md:grid-cols-2 md:gap-6 md:px-6 lg:flex lg:flex-row lg:gap-10 ">
+      <div className="flex flex-col  lg:px-[124px] px-4 cursor-pointer gap-14 md:grid md:grid-cols-2 md:gap-6 md:px-6 lg:flex lg:flex-row lg:gap-10 ">
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
           className="flex flex-col w-full gap-3"
         >
-          <div data-aos="zoom-out-up" data-aos-duration="3000" className="">
+          <div className="">
             <img
               src={CD1}
               className=" w-full h-[247px] object-cover  "
@@ -214,7 +214,7 @@ function Home() {
           data-aos-duration="3000"
           className="flex flex-col w-full gap-3"
         >
-          <div data-aos="zoom-out-up" data-aos-duration="3000" className="">
+          <div className="">
             <img
               src={FS1}
               className=" w-full h-[247px] object-cover  "
@@ -239,7 +239,7 @@ function Home() {
           data-aos-duration="3000"
           className="flex flex-col w-full gap-3"
         >
-          <div data-aos="zoom-out-up" data-aos-duration="3000" className="">
+          <div className="">
             <img
               src={B1}
               className=" w-full h-[247px] object-cover  "
@@ -265,7 +265,9 @@ function Home() {
         className="flex flex-col w-full lg:justify-start lg:items-start lg:px-[124px] font-normal text-[28px] gap-6 px-4 md:px-6 "
       >
         <div className="">
-          <p className=" text-[#107AB7] leading-[42px]">All Products</p>
+          <p className=" text-[#107AB7] text-[28px] leading-[42px]">
+            All Products
+          </p>
         </div>
         <div className="grid grid-cols-1 gap-10 md:flex">
           <div className="flex flex-col gap-3">
@@ -304,45 +306,39 @@ function Home() {
           Trusted By
         </p>
         <div className="">
-          <div className="flex flex-col  gap-8 pb-3 md:flex-row md:flex md:gap-8 lg:gap-[80px]">
-            <div className="flex gap-[100px] w-full lg:gap-[80px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col  gap-8  pb-3 md:flex-row md:flex md:gap-6 lg:gap-[80px]"
+          >
+            <div className="flex gap-[30px] md:gap-[50px] w-full lg:gap-[80px]">
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={Nestle}
                 alt=""
                 srcSet=""
                 className=" w-[76px] h-[76px] object-contain lg:h-[80px]  "
               />
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={SimeDarby}
                 alt=""
                 srcSet=""
                 className=" w-[76px] h-[76px] object-containlg:h-[80px] "
               />
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={MusimMas}
                 alt=""
                 srcSet=""
                 className=" w-[76px] h-[76px] object-contain  lg:h-[80px] "
               />
             </div>
-            <div className="flex w-full gap-[100px] lg:gap-[80px]">
+            <div className="flex w-full gap-[20px] md:gap-[50px] lg:gap-[80px]">
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={Winlmar}
                 alt=""
                 srcSet=""
                 className=" w-[130px]  h-[50px] object-contain lg:py-2 lg:w-[200px] lg:h-[80px] "
               />
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={Gar}
                 alt=""
                 srcSet=""
@@ -359,7 +355,7 @@ function Home() {
       >
         <img src={Why} alt="" srcSet="" className="object-cover w-full " />
       </div>
-      <div className="flex flex-col gap-8 ">
+      <div className="flex flex-col gap-8 pt-4 ">
         <p
           data-aos="fade-up"
           data-aos-duration="3000"
@@ -374,8 +370,6 @@ function Home() {
             className=" gap-6 w-full px-4 md:px-6 lg:px-[124px]  md:flex md:gap-6 "
           >
             <img
-              data-aos="zoom-out-up"
-              data-aos-duration="1000"
               src={LastNew1}
               alt=""
               srcSet=""
@@ -409,8 +403,6 @@ function Home() {
             className="grid grid-cols-1 gap-6 w-full px-4 md:px-6 lg:px-[124px] md:flex md:gap-6  "
           >
             <img
-              data-aos="zoom-out-up"
-              data-aos-duration="1000"
               src={LastNew2}
               alt=""
               srcSet=""

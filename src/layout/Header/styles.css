@@ -1,11 +1,1 @@
-.header {
-  background: #ffffff;
-}
-.showmenu {
-  @media (min-width: 720px) {
-    .md\:px-6 {
-      padding-left: 1.5rem /* 24px */;
-      padding-right: 1.5rem /* 24px */;
-    }
-  }
-}
+

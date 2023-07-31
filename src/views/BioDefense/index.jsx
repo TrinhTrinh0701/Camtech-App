@@ -1,5 +1,5 @@
 import { DownloadOutlined, RightOutlined } from "@ant-design/icons";
-import { Carousel } from "@material-tailwind/react";
+import { Carousel, Typography } from "@material-tailwind/react";
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import B1 from "../../asset/img/Biodefense/1.png";
@@ -10,34 +10,42 @@ import Whyweare from "../../asset/img/why.png";
 import "./styles.css";
 
 export default function BioDefense() {
-  const [image, setImage] = useState({
+  const image = {
     img1: "http://localhost:3000/static/media/1.3b5c5f9bc68781ab4e64.png",
     img2: "http://localhost:3000/static/media/1.dae4dabc33bcfb75bde1.png",
     img3: "http://localhost:3000/static/media/1.91aded362aee9dc0b455.png",
-  });
+  };
   const [activeImg, setActiveImg] = useState(image.img1);
 
   return (
     <Fragment>
-      <div className="min-w-[560px]">
-        <div className="">
+      <div className="">
+        <div className="relative">
           <img
             src={Whyweare}
             className="w-full h-[256px] object-cover top-0 left-0 right-0"
             alt=""
             srcSet=""
           />
-          <div className="flex absolute z-3 top-[130px] w-full px-4 md:px-6 lg:px-[124px] gap-[56px]">
-            <div className="flex justify-center gap-2 ">
-              <p className="text-[#484848] text-xs leading-[16px]">Home</p>
-              <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
-              <p className="text-[#107AB7] leading-[16px] text-xs underline">
-                BioDefense
-              </p>
+          <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
+            <div className="">
+              <Typography variant="lead" color="white" className="">
+                <div className="flex items-center justify-center gap-2">
+                  <Link to="/">
+                    <span className="text-[#484848] hover:underline text-xs leading-[16px]">
+                      Home
+                    </span>
+                  </Link>
+                  <RightOutlined className="flex pt-1 justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+                  <p className="text-[#107AB7] pt-1 leading-[16px] text-xs underline">
+                    BioDefense
+                  </p>
+                </div>
+                <p className="text-[40px] absolute leading-[48px] text-[#107AB7] font-extrabold">
+                  BIODEFENSE
+                </p>
+              </Typography>
             </div>
-            <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
-              BIODEFENSE
-            </p>
           </div>
         </div>
         <div className="flex flex-col w-full py-16 lg:px-[124px] gap-14 md:flex md:flex-row lg:gap-16 md:gap-6 ">
@@ -123,12 +131,12 @@ export default function BioDefense() {
                 </div>
                 <div className="grid grid-cols-1 gap-6 lg:flex ">
                   <Link to="#">
-                    <button className="text-white hover:bg-teal-700 font-bold leading-[24px] md:w-[185px] text-base bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
+                    <button className="text-white hover:bg-teal-700 font-bold leading-[24px] md:w-[185px] text-[15px] bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
                       Request a Quote
                     </button>
                   </Link>
                   <Link to="#">
-                    <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[254px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
+                    <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[254px] cursor-pointer font-bold text-[15px] rounded-md w-full py-3 px-6 border border-[#107AB7]">
                       <DownloadOutlined></DownloadOutlined> Download Brochure
                     </button>
                   </Link>
@@ -255,9 +263,7 @@ export default function BioDefense() {
               height="315"
               src="https://www.youtube.com/embed/w7gom4rerpY"
               title="Camtech&#39;s Camthrax Detector"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
               className="lg:w-[595px] w-full"
             ></iframe>
           </div>

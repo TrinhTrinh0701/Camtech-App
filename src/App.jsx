@@ -1,17 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
+import { AnimatePresence } from "framer-motion";
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { AnimatePresence } from "framer-motion";
+import "./App.css";
 import Layout from "./layout/Layout";
+import BioDefense from "./views/BioDefense";
+import ClinicalDiagnostics from "./views/Clinical Diagnostics";
+import ContactUs from "./views/ContactUs";
+import FoodSafety from "./views/Food Safety";
 import Home from "./views/Home";
+import Product from "./views/Product";
 import Technology from "./views/Technology";
 import WhoWeAre from "./views/Who We Are";
-import Product from "./views/Product";
-import ClinicalDiagnostics from "./views/Clinical Diagnostics";
-import FoodSafety from "./views/Food Safety";
-import BioDefense from "./views/BioDefense";
-import ContactUs from "./views/ContactUs";
 
 function App() {
   const location = useLocation();

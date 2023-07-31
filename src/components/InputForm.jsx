@@ -1,19 +1,8 @@
 import React, { memo } from "react";
 
-const InputForm = ({
-  label,
-  value,
-  setValue,
-  keyPayload,
-  invalidFields,
-  setInvalidFields,
-  type,
-}) => {
+const InputForm = ({ label, value, setValue, keyPayload, type }) => {
   return (
     <div>
-      {/* <label htmlFor="phone" className="text-xs font-medium">
-        {label}
-      </label> */}
       <input
         placeholder={label}
         type={type || "text"}
@@ -23,14 +12,8 @@ const InputForm = ({
         onChange={(e) =>
           setValue((prev) => ({ ...prev, [keyPayload]: e.target.value }))
         }
-        onFocus={() => setInvalidFields && setInvalidFields([])}
         autoComplete="off"
       />
-      {invalidFields?.some((i) => i.name === keyPayload) && (
-        <small className="italic text-red">
-          {invalidFields.find((i) => i.name === keyPayload)?.message}
-        </small>
-      )}
     </div>
   );
 };

@@ -1,4 +1,3 @@
-import { RightOutlined } from "@ant-design/icons";
 import { Typography } from "@material-tailwind/react";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -21,32 +20,39 @@ import C1 from "../../asset/img/carousel.png";
 import OurStory from "../../asset/img/our story.png";
 import Our from "../../asset/img/our.png";
 import Whyweare from "../../asset/img/why.png";
+import { RightOutlined } from "@ant-design/icons";
 
 function WhoWeAre() {
   return (
-    <div className="min-w-[560px]">
-      <div className="w-full">
+    <div className="w-full">
+      <div className="relative">
         <img
           src={Whyweare}
-          className="w-full h-[256px] object-cover top-0 left-0 right-0"
+          className="w-full h-[256px] object-cover"
           alt=""
           srcSet=""
         />
         <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
-          <div className="flex justify-center gap-2 ">
-            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
-            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
-            <p className="text-[#107AB7] leading-[16px] text-xs underline">
-              Who We Are
+          <div className="">
+            <div className="flex items-center justify-center gap-2">
+              <Link to="/">
+                <span className="text-[#484848] font-normal text-xs hover:underline leading-[16px]">
+                  Home
+                </span>
+              </Link>
+              <RightOutlined className="flex pt-1 justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+              <p className="text-[#107AB7] pt-1 font-semibold leading-[16px] text-xs underline">
+                Who We Are
+              </p>
+            </div>
+            <p className="text-[40px] absolute leading-[48px] text-[#107AB7] font-extrabold">
+              WHO WE ARE
             </p>
           </div>
-          <p className="text-[40px] absolute   pt-8 leading-[48px] text-[#107AB7] font-extrabold">
-            WHO WE ARE
-          </p>
         </div>
       </div>
       <div className="flex flex-col gap-14">
-        <div className="relative">
+        <div className="relative w-full">
           <img
             src={C1}
             className="w-full h-[375px] object-cover"
@@ -54,7 +60,11 @@ function WhoWeAre() {
             srcSet=""
           />
           <div className="absolute inset-0 grid items-center justify-center w-full h-full ">
-            <div className=" w-full px-4 md:px-6 lg:px-[124px]  t-[150px] ">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className=" w-full px-4 md:px-6 lg:px-[124px]  t-[150px] "
+            >
               <Typography
                 variant="lead"
                 color="white"
@@ -118,12 +128,12 @@ function WhoWeAre() {
                 </p>
               </div>
             </div>
-            <div className="lg:flex gap-12  flex flex-col lg:flex-col lg:gap-[150px] ">
-              <div
-                data-aos="fade-left"
-                data-aos-duration="500"
-                className="w-full"
-              >
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="lg:flex gap-12  flex flex-col lg:flex-col lg:gap-[150px] "
+            >
+              <div className="w-full">
                 <img
                   src={Our}
                   className="w-full h-full md:w-[550px] lg:w-[564px]"
@@ -131,11 +141,7 @@ function WhoWeAre() {
                   srcSet=""
                 />
               </div>
-              <div
-                data-aos="fade-left"
-                data-aos-duration="500"
-                className="w-full"
-              >
+              <div className="w-full">
                 <img
                   src={OurStory}
                   className="w-full h-full md:w-[550px] "
@@ -155,45 +161,39 @@ function WhoWeAre() {
           >
             Our Partners
           </p>
-          <div className="flex flex-col gap-6 md:flex md:flex-row lg:gap-16 ">
-            <div className="flex py-[6px] gap-[100px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="flex flex-col gap-6 md:gap-[30px] md:flex md:flex-row lg:gap-16 "
+          >
+            <div className="flex py-[6px] gap-[30px] md:gap-[50px]">
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={Nus}
                 className="w-[80px] h-[36px] object-cover"
                 alt=""
                 srcSet=""
               />
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={Enterprise}
                 className="w-[98px] h-[34px] object-cover"
                 alt=""
                 srcSet=""
               />
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={A}
                 className="w-[92px] h-[44px] object-cover"
                 alt=""
                 srcSet=""
               />
             </div>
-            <div className="flex py-[5px] gap-[100px]">
+            <div className="flex py-[5px] gap-[30px] md:gap-[50px]">
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={Ucl}
                 className="w-[127px] h-[37px] object-cover"
                 alt=""
                 srcSet=""
               />
               <img
-                data-aos="fade-left"
-                data-aos-duration="500"
                 src={University}
                 className="w-[163px] h-[42px] object-cover"
                 alt=""
@@ -409,45 +409,39 @@ function WhoWeAre() {
             Trusted By
           </p>
           <div data-aos="fade-up" data-aos-duration="3000" className="flex ">
-            <div className="flex-col flex gap-[32px] md:flex md:flex-row lg:gap-[60px] ">
-              <div className="flex gap-[100px]">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              className="flex-col flex gap-[32px] md:gap-[50px] md:flex md:flex-row lg:gap-[60px] "
+            >
+              <div className="flex gap-[50px] md:gap-[70px]">
                 <img
-                  data-aos="fade-left"
-                  data-aos-duration="500"
                   src={Nestle}
                   alt=""
                   srcSet=""
                   className=" w-[76px] h-[76px] object-contain "
                 />
                 <img
-                  data-aos="fade-left"
-                  data-aos-duration="500"
                   src={SimeDarby}
                   alt=""
                   srcSet=""
                   className=" w-[76px] h-[76px] object-contain "
                 />
                 <img
-                  data-aos="fade-left"
-                  data-aos-duration="500"
                   src={MusimMas}
                   alt=""
                   srcSet=""
                   className=" w-[76px] h-[76px] object-contain "
                 />
               </div>
-              <div className="flex gap-[100px]">
+              <div className="flex gap-[30px] md:gap-[50px]">
                 <img
-                  data-aos="fade-left"
-                  data-aos-duration="500"
                   src={Winlmar}
                   alt=""
                   srcSet=""
                   className=" w-[124px]  h-[47px] object-contain "
                 />
                 <img
-                  data-aos="fade-left"
-                  data-aos-duration="500"
                   src={Gar}
                   alt=""
                   srcSet=""

@@ -1,43 +1,48 @@
+import { DownloadOutlined, RightOutlined } from "@ant-design/icons";
+import { Typography } from "@material-tailwind/react";
 import React from "react";
-import Whyweare from "../../asset/img/why.png";
-import Slider from "../../asset/img/slider.png";
+import { Link } from "react-router-dom";
 import FS2 from "../../asset/img/Food Safety/2.PNG";
 import FS3 from "../../asset/img/Food Safety/3.PNG";
 import FS4 from "../../asset/img/Food Safety/4.PNG";
 import FS5 from "../../asset/img/Food Safety/5.PNG";
-import { RightOutlined, DownloadOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
-import { Typography } from "@material-tailwind/react";
 import C3 from "../../asset/img/carousel3.png";
+import Whyweare from "../../asset/img/why.png";
 
 function FoodSafety(props) {
   return (
-    <div className="min-w-[560px]">
-      <div className="">
+    <div className="">
+      <div className="relative">
         <img
           src={Whyweare}
           className="w-full h-[256px] object-cover top-0 left-0 right-0"
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
-          <div className="flex justify-center gap-2 ">
-            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
-            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
-            <p className="text-[#107AB7] leading-[16px] text-xs underline">
-              Food Safety
+        <div className="flex absolute w-full z-3 top-[130px] px-4 md:px-6 lg:px-[124px] gap-[56px]">
+          <div className="">
+            <div className="flex items-center justify-center gap-2">
+              <Link to="/">
+                <span className="text-[#484848]  hover:underline text-xs leading-[16px]">
+                  Home
+                </span>
+              </Link>
+              <RightOutlined className="flex pt-1 justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+              <p className="text-[#107AB7] pt-1 leading-[16px] text-xs underline">
+                Food Safety
+              </p>
+            </div>
+            <p className="text-[40px] absolute leading-[48px] text-[#107AB7] font-extrabold">
+              FOOD SAFETY
             </p>
           </div>
-          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
-            FOOD SAFETY
-          </p>
         </div>
       </div>
       <div className="">
-        <div className="relative ">
+        <div className="relative h-full ">
           <img
             src={C3}
-            className="w-full h-[650px] object-cover"
+            className="w-full h-[650px] lg:h-[400px] object-cover"
             alt=""
             srcSet=""
           />
@@ -76,14 +81,13 @@ function FoodSafety(props) {
             </div>
           </div>
         </div>
+
         <div
           data-aos="fade-up"
           data-aos-duration="3000"
           className="flex flex-col px-4 lg:px-[124px] gap-6 py-14 md:px-6 md:flex-row-reverse md:flex  md:gap-6 lg:gap-[124px] "
         >
           <img
-            data-aos="fade-left"
-            data-aos-duration="500"
             src={FS2}
             className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -135,7 +139,7 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-[#107AB7] md:w-[348px] leading-[24px] hover:bg-blue-gray-50 font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] md:w-[348px] leading-[24px] hover:bg-blue-gray-50 font-bold text-[15px] rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 Visit 3-MCPD Website
               </button>
             </Link>
@@ -147,8 +151,6 @@ function FoodSafety(props) {
           className="flex flex-col px-4  md:px-6  gap-6 py-14  md:flex-row  md:flex md:gap-6 md:bg-[#F7F7F9] lg:gap-[124px] lg:px-[124px] "
         >
           <img
-            data-aos="fade-left"
-            data-aos-duration="500"
             src={FS3}
             className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -200,12 +202,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white hover:bg-teal-700 font-bold leading-[24px] text-base bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
+              <button className="text-white hover:bg-teal-700 font-bold leading-[24px] text-[15px] bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-[15px] rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>
@@ -217,8 +219,6 @@ function FoodSafety(props) {
           className="flex flex-col px-4  gap-6 py-14   md:flex md:px-6 md:flex-row-reverse lg:px-[124px] lg:gap-[124px] "
         >
           <img
-            data-aos="fade-left"
-            data-aos-duration="500"
             src={FS4}
             className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -267,12 +267,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
+              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-[15px] bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-[15px] rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>
@@ -284,8 +284,6 @@ function FoodSafety(props) {
           className="flex flex-col px-4 md:px-6 md:bg-[#F7F7F9] gap-6 py-14  md:flex-row  md:flex  lg:flex lg:gap-[124px] lg:px-[124px] "
         >
           <img
-            data-aos="fade-left"
-            data-aos-duration="500"
             src={FS5}
             className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -310,12 +308,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 w-full cursor-pointer">
+              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-[15px] bg-[#09D3C2] rounded-md py-3 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-[15px] rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>
@@ -327,8 +325,6 @@ function FoodSafety(props) {
           className="flex flex-col px-4 md:px-6  gap-6 py-14 md:flex md:flex-row-reverse lg:flex lg:gap-[124px] "
         >
           <img
-            data-aos="fade-left"
-            data-aos-duration="500"
             src={FS3}
             className="w-full h-[235px] object-cover lg:w-[680px] lg:h-[379px]"
             alt=""
@@ -354,12 +350,12 @@ function FoodSafety(props) {
               </div>
             </div>
             <Link to="#">
-              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-base bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
+              <button className="text-white font-bold leading-[24px] hover:bg-teal-700 text-[15px] bg-[#09D3C2] rounded-md py-3 px-6 w-full cursor-pointer">
                 Request a Quote
               </button>
             </Link>
             <Link to="#">
-              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-base rounded-md w-full py-3 px-6 border border-[#107AB7]">
+              <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[348px] cursor-pointer font-bold text-[15px] rounded-md w-full py-3 px-6 border border-[#107AB7]">
                 <DownloadOutlined></DownloadOutlined> Download Brochure
               </button>
             </Link>

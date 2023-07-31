@@ -6,6 +6,7 @@ import { useState } from "react";
 import Map from "../../asset/img/map.png";
 import Whyweare from "../../asset/img/why.png";
 import InputForm from "../../components/InputForm";
+import { Link } from "react-router-dom";
 
 function ContactUs(props) {
   const [payload, setPayload] = useState({
@@ -42,25 +43,33 @@ function ContactUs(props) {
   };
 
   return (
-    <div className="pb-14 min-w-[560px]">
-      <div className="">
+    <div className="pb-14">
+      <div className="relative">
         <img
           src={Whyweare}
           className="w-full h-[256px] object-cover top-0 left-0 right-0"
           alt=""
           srcSet=""
         />
-        <div className="flex absolute z-1 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
-          <div className="flex justify-center gap-2 ">
-            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
-            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
-            <p className="text-[#107AB7] leading-[16px] text-xs underline">
-              Contact Us
-            </p>
+        <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
+          <div className="">
+            <Typography variant="lead" color="white" className="">
+              <div className="flex items-center justify-center gap-2">
+                <Link to="/">
+                  <span className="text-[#484848] text-xs hover:underline leading-[16px]">
+                    Home
+                  </span>
+                </Link>
+                <RightOutlined className="flex pt-1 justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+                <p className="text-[#107AB7] pt-1 leading-[16px] text-xs underline">
+                  Contact Us
+                </p>
+              </div>
+              <p className="text-[40px] absolute leading-[48px] text-[#107AB7] font-extrabold">
+                CONTACT US
+              </p>
+            </Typography>
           </div>
-          <p className="text-[40px] absolute pt-8 leading-[48px] text-[#107AB7] font-extrabold">
-            CONTACT US
-          </p>
         </div>
       </div>
       <div
@@ -187,10 +196,10 @@ function ContactUs(props) {
             <p className="leading-[32px] text-xl font-bold text-[#107AB7]">
               GET IN TOUCH
             </p>
-            <p className="text-[#767676] leading-[26px] text-base font-normal">
+            <p className="text-[#767676] leading-[26px] text-[15px] font-normal">
               +65 6265 1817
             </p>
-            <p className="text-[#107AB7] cursor-pointer leading-[26px] text-base font-normal">
+            <p className="text-[#107AB7] cursor-pointer leading-[26px] text-[15px] font-normal">
               info@camtech.org
             </p>
           </div>
@@ -200,7 +209,7 @@ function ContactUs(props) {
             </p>
             <div className="grid grid-cols-1 gap-8 md:flex md:gap-[60px] md:flex-row-reverse lg:flex lg:flex-col">
               <div className=" lg:px-0">
-                <p className="text-[#107AB7] leading-[26px] text-[24px] font-bold">
+                <p className="text-[#107AB7] leading-[24px] text-[14px] font-bold">
                   SINGAPROE
                 </p>
                 <p className="text-[#767676] leading-[26px] text-base font-normal">
@@ -209,7 +218,7 @@ function ContactUs(props) {
                 </p>
               </div>
               <div className="">
-                <p className="text-[#107AB7] leading-[26px] text-[24px] font-bold">
+                <p className="text-[#107AB7] leading-[24px] text-[14px] font-bold">
                   UNITED KINGDOM
                 </p>
                 <p className="text-[#767676] leading-[26px] text-base font-normal">
@@ -220,7 +229,7 @@ function ContactUs(props) {
                 </p>
               </div>
               <div className="">
-                <p className="text-[#107AB7] leading-[26px] text-[24px] font-bold">
+                <p className="text-[#107AB7] leading-[24px] text-[14px] font-bold">
                   USA
                 </p>
                 <p className="text-[#767676] leading-[26px] text-base font-normal">
@@ -245,7 +254,7 @@ function ContactUs(props) {
                 <div className="w-50">
                   <Typography
                     color="blue-gray"
-                    className="text-[#107AB7] leading-[26px] text-[24px] font-bold "
+                    className="text-[#107AB7] leading-[24px] text-[14px] font-bold "
                   >
                     USA
                   </Typography>
@@ -277,7 +286,7 @@ function ContactUs(props) {
                 <div className="w-50">
                   <Typography
                     color="blue-gray"
-                    className="text-[#107AB7] leading-[26px] text-[24px] font-bold "
+                    className="text-[#107AB7] leading-[24px] text-[14px] font-bold "
                   >
                     UNITED KINGDOM
                   </Typography>
@@ -309,7 +318,7 @@ function ContactUs(props) {
                 <div className="w-50">
                   <Typography
                     color="blue-gray"
-                    className="text-[#107AB7] leading-[26px] text-[24px] font-bold "
+                    className="text-[#107AB7] leading-[24px] text-[14px] font-bold "
                   >
                     Singapore
                   </Typography>
@@ -336,7 +345,7 @@ function ContactUs(props) {
               <p className="leading-[48px] text-[40px] font-light">
                 Contact Camtech
               </p>
-              <p className="leading-[24px] text-base font-normal">
+              <p className="leading-[24px] text-[15px] font-normal">
                 We are looking for partners for R&D collaboration and
                 distribution of products worldwide. Please use the form above to
                 indicate your interest.

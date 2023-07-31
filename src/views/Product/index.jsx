@@ -1,16 +1,16 @@
+import { RightOutlined } from "@ant-design/icons";
 import React from "react";
-import Whyweare from "../../asset/img/why.png";
-import Slider from "../../asset/img/slider.png";
+import { Link } from "react-router-dom";
+import BF from "../../asset/img/Biodefense/1.png";
 import CD from "../../asset/img/Clinical Diagnostics/1.png";
 import FS from "../../asset/img/Food Safety/1.png";
-import BF from "../../asset/img/Biodefense/1.png";
-import { Link } from "react-router-dom";
-import { RightOutlined } from "@ant-design/icons";
+import Whyweare from "../../asset/img/why.png";
+import { Typography } from "@material-tailwind/react";
 
 function Product() {
   return (
-    <div className="min-w-[560px]">
-      <div className="">
+    <div className="w-full">
+      <div className="relative w-full">
         <img
           src={Whyweare}
           className="w-full h-[256px] object-cover top-0 left-0 right-0"
@@ -18,16 +18,24 @@ function Product() {
           srcSet=""
         />
         <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
-          <div className="flex justify-center gap-2 ">
-            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
-            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
-            <p className="text-[#107AB7] leading-[16px] text-xs underline">
-              Product
-            </p>
+          <div className="">
+            <Typography variant="lead" color="white" className="">
+              <div className="flex items-center justify-center gap-2">
+                <Link to="/">
+                  <span className="text-[#484848] hover:underline text-xs leading-[16px]">
+                    Home
+                  </span>
+                </Link>
+                <RightOutlined className="flex pt-1 justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+                <p className="text-[#107AB7] pt-1 leading-[16px] text-xs underline">
+                  Product
+                </p>
+              </div>
+              <p className="text-[40px] absolute leading-[48px] text-[#107AB7] font-extrabold">
+                PRODUCT
+              </p>
+            </Typography>
           </div>
-          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
-            Product
-          </p>
         </div>
       </div>
       <div className="px-4 md:px-6 lg:px-[124px]">
@@ -59,7 +67,7 @@ function Product() {
               </p>
               <div className="">
                 <Link to="/clinicalDiagnostics">
-                  <button className="text-[#107AB7]  leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-base rounded-md w-full py-3 border border-[#107AB7]">
+                  <button className="text-[#107AB7]  leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-[15px] rounded-md w-full py-3 border border-[#107AB7]">
                     Learn More
                   </button>
                 </Link>
@@ -93,7 +101,7 @@ function Product() {
                 compounds in different food matrices.
               </p>
               <Link to="/foodSafety">
-                <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-base rounded-md w-full py-3  border border-[#107AB7]">
+                <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-[15px] rounded-md w-full py-3  border border-[#107AB7]">
                   Learn More
                 </button>
               </Link>
@@ -126,7 +134,7 @@ function Product() {
                 anthrax.
               </p>
               <Link to="/bioDefense">
-                <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-base rounded-md w-full py-3 border border-[#107AB7]">
+                <button className="text-[#107AB7] leading-[24px] hover:bg-blue-gray-50 md:w-[153px] font-bold text-[15px] rounded-md w-full py-3 border border-[#107AB7]">
                   Learn More
                 </button>
               </Link>

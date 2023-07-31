@@ -10,8 +10,8 @@ import Whyweare from "../../asset/img/why.png";
 
 function Technology(props) {
   return (
-    <div className="min-w-[560px]">
-      <div className="">
+    <div className="">
+      <div className="relative">
         <img
           src={Whyweare}
           className="w-full h-[256px] object-cover top-0 left-0 right-0"
@@ -19,23 +19,29 @@ function Technology(props) {
           srcSet=""
         />
         <div className="flex absolute z-3 top-[130px] px-4 md:px-6 lg:px-[124px] w-full gap-[56px]">
-          <div className="flex justify-center gap-2 ">
-            <p className="text-[#484848] text-xs leading-[16px]">Home</p>
-            <RightOutlined className="flex justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
-            <p className="text-[#107AB7] leading-[16px] text-xs underline">
-              Technology
+          <div className="">
+            <div className="flex items-center justify-center gap-2">
+              <Link to="/">
+                <span className="text-[#484848] text-xs hover:underline leading-[16px]">
+                  Home
+                </span>
+              </Link>
+              <RightOutlined className="flex pt-1 justify-center text-[#484848] text-base leading-[26px]"></RightOutlined>
+              <p className="text-[#107AB7] pt-1 leading-[16px] text-xs underline">
+                Technology
+              </p>
+            </div>
+            <p className="text-[40px] absolute leading-[48px] text-[#107AB7] font-extrabold">
+              TECHNOLOGY
             </p>
           </div>
-          <p className="text-[40px] absolute  pt-8 leading-[48px] text-[#107AB7] font-extrabold">
-            TECHNOLOGY
-          </p>
         </div>
       </div>
       <div className="">
-        <div className="relative ">
+        <div className="relative w-full ">
           <img
             src={C3}
-            className="w-full h-[650px] object-cover"
+            className="w-full h-[650px] md:h-[300px] object-cover"
             alt=""
             srcSet=""
           />
@@ -69,11 +75,13 @@ function Technology(props) {
             </div>
           </div>
         </div>
-        <div className=" lg:pb-14 md:flex-row-reverse flex flex-col px-4 gap-6 lg:px-[124px]  md:flex md:gap-6 md:px-6 lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" lg:pb-14 md:flex-row-reverse flex flex-col px-4 gap-6 lg:px-[124px]  md:flex md:gap-6 md:px-6 lg:gap-[124px] "
+        >
           <div className="">
             <img
-              data-aos="zoom-out-up"
-              data-aos-duration="500"
               src={T1}
               alt=""
               className="bg-[#CFE4F1] md:mt-5 w-full md:w-[348px] md:h-[234px] lg:w-[564px] h-full mt-14  lg:mt-14"
@@ -92,11 +100,13 @@ function Technology(props) {
             </p>
           </div>
         </div>
-        <div className=" lg:pb-14 lg:px-[124px] md:bg-[#F7F7F9] lg:bg-[#F7F7F9] md:flex-row px-4 flex flex-col   gap-6  md:flex md:gap-6 md:px-6 lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" lg:pb-14 lg:px-[124px] md:bg-[#F7F7F9] lg:bg-[#F7F7F9] md:flex-row px-4 flex flex-col   gap-6  md:flex md:gap-6 md:px-6 lg:gap-[124px] "
+        >
           <div className="">
             <img
-              data-aos="zoom-out-up"
-              data-aos-duration="500"
               src={T2}
               alt=""
               className="bg-[#CFE4F1] md:mt-5 w-full h-full mt-14 md:w-[348px] lg:w-[564px] md:h-[234px] lg:mt-14"
@@ -115,11 +125,13 @@ function Technology(props) {
             </p>
           </div>
         </div>
-        <div className=" flex flex-col lg:px-[124px] md:flex-row-reverse px-4 gap-6 md:flex  md:gap-6 md:px-6 lg:gap-[124px] ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className=" flex flex-col lg:px-[124px] md:flex-row-reverse px-4 gap-6 md:flex  md:gap-6 md:px-6 lg:gap-[124px] "
+        >
           <div className="">
             <img
-              data-aos="zoom-out-up"
-              data-aos-duration="500"
               src={T3}
               alt=""
               className="bg-[#CFE4F1] md:mt-5 w-full h-full lg:w-[564px] mt-14 md:w-[348px] md:h-[234px] lg:mt-14"
